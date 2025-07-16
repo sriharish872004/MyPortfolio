@@ -1,0 +1,174 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+  --font-poppins: Poppins, sans-serif;
+}
+
+/* Adding Style for elements */
+@layer base{
+  
+
+    .dark{
+    --color-demo: blue;
+    
+  }
+
+  ::selection{
+    background-color: #cce4ff;
+    color: #000;
+  }
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+
+html{
+  scroll-behavior: smooth;
+}
+/* Hand animation */
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+/* Correct keyframes */
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(14deg); }
+  30% { transform: rotate(-8deg); }
+  40% { transform: rotate(14deg); }
+  50% { transform: rotate(-4deg); }
+  60% { transform: rotate(10deg); }
+  70% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+.logo-text{
+  font-family: "Damion", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ @keyframes zoomInOut {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoom-in-out {
+  animation: zoomInOut 0.5s ease-out forwards;
+}
+
+
+}
+
+/* Custom component creation */
+@layer components {
+
+.h1-style {
+  @apply text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold;
+}
+
+.h2-style {
+  @apply  text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold
+         text-center ;
+}
+
+.h3-style {
+  @apply relative inline-block 
+         text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl 
+         font-extrabold tracking-tight ;
+}
+
+
+.p-style {
+  @apply   text-base text-gray-900 dark:text-gray-100 sm:text-sm md:text-lg lg:text-xl xl:text-xl text-justify leading-relaxed tracking-normal;
+}
+
+.h3-underline {
+  @apply flex items-center mt-1.5 mb-6 w-2/3;
+}
+.h3-underline::before {
+  content: "";
+  @apply block h-1.5 w-2 bg-purple-600 ;
+}
+.h3-underline::after {
+  content: "";
+  @apply h-1.5 flex-1 ml-1.5 rounded-e-full;
+   background: linear-gradient(to right, #7c3aed, rgba(124, 58, 237, 0.4), transparent);
+}
+
+.h3-frontLine {
+  @apply flex items-center gap-3;
+}
+
+.nav-link {
+  @apply text-gray-500 dark:text-gray-300 border-b-2 border-transparent  hover:text-purple-600 dark:hover:text-purple-400 ;
+}
+
+.nav-link.active {
+  @apply text-purple-600 dark:text-purple-400 border-b-2 border-purple-600 dark:border-purple-400 font-semibold ;
+}
+
+
+  .btn {
+  @apply px-4 py-2 md:px-6 md:py-4 lg:px-6 lg:py-4 rounded-md font-semibold cursor-pointer tracking-wider transition-transform duration-200 ease-linear
+         text-white shadow-md hover:shadow-md
+         bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl
+         hover:scale-105 active:scale-100 focus:outline-none focus:ring-1 focus:ring-blue-300 dark:focus:ring-blue-800
+         dark:text-white dark:hover:shadow-2xl;
+}
+
+  .gradient {
+  @apply text-transparent font-bold bg-clip-text bg-gradient-to-r from-purple-600 to-blue-500;
+}
+
+
+  hr{
+    @apply h-px my-6 bg-gray-300 border-0 dark:bg-gray-700;
+  }
+
+  .home-img{
+            @apply bg-center bg-no-repeat aspect-square bg-cover rounded-full
+              min-h-[220px] w-[220px]
+              sm:min-h-[260px] sm:w-[260px]
+              md:min-h-[260px] md:w-[260px]
+              lg:min-h-[300px] lg:w-[300px]
+              xl:min-h-[320px] xl:w-[320px];
+  }
+
+      /* Base style for all project buttons */
+    .project-btn {
+      @apply px-4 py-2 rounded-full transition-colors duration-300;
+    }
+
+    /* Active button */
+    .active-btn {
+      @apply bg-purple-500 dark:bg-purple-500 text-white hover:bg-purple-400;
+    }
+
+    /* Inactive (transparent) style */
+    .project-btn:not(.active-btn) {
+      @apply bg-transparent border border-purple-500 text-purple-500 hover:bg-purple-50 dark:hover:bg-purple-900;
+    }
+
+}
+

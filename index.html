@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>  
+    <link href="./src/output.css" rel="stylesheet">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <!-- Heroicons for Light/Dark Btn-->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+<script type="text/javascript">
+   emailjs.init("ZYeoi9o4UQQPocyzK");
+</script>
+
+</head>
+
+<body class="container font-poppins dark:bg-gray-900 dark:text-white mx-auto">
+
+   <!-- ? Light Effect End -->
+  <div>
+  <img
+    alt="left img"
+    loading="lazy"
+    decoding="async"
+    class="hidden dark:block absolute left-0 top-0  h-[230px] md:h-[350px] w-[230px] md:w-[350px] z-0 pointer-events-none"
+    src="./assets/images/left-light.svg"
+    style="color: transparent;"
+  />
+  <img
+    alt="right img"
+    loading="lazy"
+    decoding="async"
+    class="hidden dark:block absolute right-0 top-0  h-[230px] md:h-[350px] w-[230px] md:w-[350px] z-0 pointer-events-none"
+    src="./assets/images/right-light.svg"
+    style="color: transparent;"
+  />
+  </div>
+    <!-- ! Light Effect End -->
+     
+    <!-- ? Navigation Bar Start -->
+<header
+  class="sticky top-0 z-50 rounded-2xl backdrop-blur-md bg-white/30 dark:bg-gray-900/30 shadow-md flex justify-between items-center px-3 py-1.5 sm:px-4 sm:py-2 md:px-6 md:py-2.5 max-w-8xl mx-auto"
+>
+  <h1 class="font-bold basis-1/4 text-lg sm:text-xl md:text-2xl logo-text cursor-pointer">MyPortfolio</h1>
+
+  <!-- Nav Links -->
+  <nav id="navbar" class="hidden basis-3/4 md:flex md:justify-end md:items-center md:font-semibold gap-x-6 md:gap-x-8 text-sm sm:text-base">
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <!-- Theme Toggle Button -->
+  <button
+    id="toggle"
+    class="group relative w-9 h-9 sm:w-10 sm:h-10 rounded-full ml-4 md:ml-5 cursor-pointer dark:bg-gray-900 shadow-lg transition-all duration-500 flex items-center justify-center"
+  >
+    <!-- Sun Icon -->
+<svg
+  id="sunIcon"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke-width="1.5"
+  stroke="currentColor"
+  class="h-8 w-8 sm:h-10 sm:w-10 text-yellow-400 bg-yellow-100 border border-yellow-300 rounded-full p-1 shadow-sm 
+         transition-all duration-500 ease-in-out transform group-hover:rotate-[135deg] dark:opacity-0 dark:scale-0"
+>
+  <path stroke-linecap="round" stroke-linejoin="round"
+    d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+</svg>
+
+<!-- Moon Icon -->
+<svg
+  id="moonIcon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  class="absolute h-5 w-5 sm:h-6 sm:w-6 text-white 
+         transition-all duration-500 ease-in-out transform rotate-0 opacity-0 scale-0
+         dark:opacity-100 dark:scale-100  "
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M21 12.79A9 9 0 1 1 11.21 3c0.25 0 0.5.01 0.74.03a7 7 0 1 0 9.05 9.76z"
+  />
+</svg>
+
+    
+  </button>
+</header>
+  <!-- ! Navigation Section End -->
+
+  <!-- ? Home Section Start -->
+    <section id="home" class="relative mt-14 md:mt-0" data-section="home">
+  <div class="relative flex min-h-screen -mt-20 flex-col overflow-x-hidden bg-background text-text dark:bg-background dark:text-text z-10">
+    <div class="container flex justify-center items-center h-full grow">
+      <div class="flex flex-1">
+        <div class="layout-content-container w-full h-full max-w-[1536px] flex flex-col gap-6">
+          <div class="flex flex-col sm:mt-18 md:grid lg:flex lg:flex-row gap-6 items-center w-full">
+
+            <!-- Social Links -->
+            <div class="hidden md:text-2xl lg:text-3xl md:flex justify-center order-1 md:order-1 lg:order-1 lg:basis-1/5 max-w-[200px]">
+              <ul class="flex flex-col gap-6 lg:gap-8">
+                <li>
+                  <a href="http://www.linkedin.com/in/sriharish-s-96a065288" class=" text-purple-700 dark:text-purple-500 hover:text-purple-800 dark:hover:text-purple-600 hover:scale-110 transition-transform duration-200">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/sriharish872004" class=" text-purple-700 dark:text-purple-500 hover:text-purple-800 dark:hover:text-purple-600 hover:scale-110 transition-transform duration-200">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class=" text-purple-700 dark:text-purple-500 hover:text-purple-800 dark:hover:text-purple-600 hover:scale-110 transition-transform duration-200">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                  </a>
+                </li>
+            </ul>
+            </div>
+
+            <!-- Avatar -->
+            <div class="flex justify-center md:col-span-2 lg:basis-2/5">
+              <img src="./assets/images/profile.png" alt="profile" class="rounded-2xl home-img" />
+            </div>
+
+            <!-- Text + Button -->
+            <div class="flex flex-col items-center gap-6 md:mt-3 lg:basis-3/5">
+              <div class="text-center px-2 space-y-1 sm:px-4">
+                <h1 class="h1-style font-bold text-nowrap">
+                  Hi, I'm ꕶriharish ꕶ <span class="wave">👋</span>
+                </h1>
+                <p class="text-subtext text-xl opacity-50 sm:text-lg md:text-xl lg:text-2xl xl:text-2xl -mt-1">
+                  Full-Stack Developer
+                </p>
+                <p class="p-style mt-2 px-4 sm:px-6 md:px-8  mx-auto text-center">
+                 I build web applications that are focused on smooth performance and thoughtful design. With every project, I try to solve real problems and create something that truly helps users.
+                </p>
+              </div>
+              <div class="mt-3">
+                <button class="btn px-6 py-3">
+                  <a href="#contact">Hire Me &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Down Button -->
+    <div class="flex justify-center items-center">
+      <button class="p-4 animate-bounce opacity-70 hover:opacity-100 transition cursor-pointer">
+        <a href="#about">Scroll Down &nbsp;<i class="fa-solid fa-arrow-down"></i></a>
+      </button>
+    </div>
+  </div>
+</section>
+
+        
+ <!-- ? About Section Start -->
+<section id="about" class="scroll-mt-10" data-section="about">
+  <div class="relative container w-full px-4 pt-24 md:mb-12 ">
+    <div class="-mt-12">
+      <div class="">
+        <h2 class="h2-style">
+          About <span class="gradient">Me</span>
+        </h2>
+      </div>
+
+      <div class="w-full mt-4 md:mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-x-16">
+        <!-- Left Column: About Text -->
+        <div class="pt-2.5 text-center  lg:text-left lg:mt-14">    
+          <p class="p-style indent-4">
+            I'm Sriharish a curious and passionate problem-solver who loves turning ideas into meaningful digital experiences. I’m always learning and growing through every challenges.
+          </p>
+          <hr class="my-4" />
+          <p class="p-style indent-4">
+            I enjoy building projects from the ground up and improving what’s already there. Writing clean code, designing with care, and creating seamless user experiences.
+          </p>
+          <hr class="my-4" />
+          <p class="p-style indent-4">
+          I value teamwork and believe great results come from shared ideas. I’m also focused and reliable when working independently, with a strong eye for detail and creativity.
+          </p>
+          <div class="mt-10 flex justify-center items-center">
+            <button class="btn px-6 py-3">Download CV &nbsp;<i class="fa-solid fa-download"></i></button>
+          </div>
+        </div>
+
+        <!-- Right Column: Education -->
+        <div class=" pt-10 md:pt-2.5 mx-auto">
+          <div class="pb-2">
+            <h3 class="h3-style">Education <span class="h3-underline"></span></h3>
+          </div>
+          <div class="mx-auto">
+            <ol class="relative ml-2 md:ml-0 border-s border-gray-200 dark:border-gray-700">
+
+              <!-- SSLC -->
+              <li class="mb-10 ms-8">
+                <span class="absolute flex items-center justify-center w-7 h-7 bg-purple-200 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-purple-900">
+                  <svg class="w-4 h-3.5 text-purple-800 dark:text-purple-300" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m 12.499079,12.25525 c 0.0968,0 0.188377,-0.0436 0.249339,-0.11884 0.06096,-0.0752 0.08473,-0.17385 0.06473,-0.26853 l -0.202146,-0.95662 c 0.115125,-0.11137 0.187491,-0.26686 0.187491,-0.43975 0,-0.182 -0.08106,-0.34343 -0.206876,-0.45558 l 0,-3.32202 -0.810333,0.50146 0,2.82056 c -0.125815,0.11215 -0.2069,0.27358 -0.2069,0.45558 0,0.17291 0.07239,0.32841 0.187515,0.43975 l -0.20217,0.95662 c -0.02,0.0947 0.0038,0.19335 0.06473,0.26853 0.06096,0.0752 0.152539,0.11884 0.249339,0.11884 l 0.625281,0 z M 12.773741,4.75539 7.5021019,1.49209 C 7.3477151,1.39699 7.1736728,1.34925 6.9996305,1.34925 c -0.1740423,0 -0.3482077,0.0477 -0.5016586,0.14284 l -5.271713,3.2633 C 1.0854931,4.84249 0.99999905,4.99633 0.99999905,5.1619 c 0,0.1656 0.085494,0.31949 0.22625985,0.40673 l 5.2716883,3.26333 c 0.153451,0.0952 0.3276163,0.14284 0.5016586,0.14284 0.1740423,0 0.3481092,-0.0477 0.5024714,-0.14284 L 12.773741,5.56863 c 0.140766,-0.0872 0.22626,-0.24113 0.22626,-0.40673 0,-0.16557 -0.08549,-0.31946 -0.22626,-0.40651 z M 6.9996059,9.78508 c -0.3283798,0 -0.6488777,-0.0912 -0.928242,-0.26411 l -3.0750017,-1.90368 0,3.27796 c 0,0.97016 1.7931578,1.7555 4.0032436,1.7555 2.2108742,0 4.0038842,-0.78536 4.0038842,-1.7555 l 0,-3.27796 -3.0748786,1.90368 C 7.6492472,9.69388 7.3279857,9.78508 6.9996059,9.78508 Z"></path></g></svg>
+                </span>
+                <div class="p-[1px] rounded-xl bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 max-w-[600px]">
+                  <div class="bg-white dark:bg-gray-900 rounded-xl p-4 shadow-md transform transition-transform hover:scale-[1.02]">
+                    <h3 class="mb-1 text-lg lg:text-xl font-semibold text-gray-900 dark:text-white">SJNS Jain Group of Schools</h3>
+                    <time class="block mb-2 text-sm text-gray-600 dark:text-gray-400"><i class="fa-solid fa-calendar-days w-2 h-2"></i>&nbsp;&nbsp;  2019–2020 &nbsp;&nbsp;SSLC</time>
+                    <p class="text-base text-gray-700 dark:text-gray-200">Completed 10th grade under the State Board curriculum.</p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Diploma -->
+              <li class="mb-10 ms-8">
+                <span class="absolute flex items-center justify-center w-7 h-7 bg-purple-200 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-purple-900">
+                  <svg class="w-4 h-3.5 text-purple-800 dark:text-purple-300" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m 12.499079,12.25525 c 0.0968,0 0.188377,-0.0436 0.249339,-0.11884 0.06096,-0.0752 0.08473,-0.17385 0.06473,-0.26853 l -0.202146,-0.95662 c 0.115125,-0.11137 0.187491,-0.26686 0.187491,-0.43975 0,-0.182 -0.08106,-0.34343 -0.206876,-0.45558 l 0,-3.32202 -0.810333,0.50146 0,2.82056 c -0.125815,0.11215 -0.2069,0.27358 -0.2069,0.45558 0,0.17291 0.07239,0.32841 0.187515,0.43975 l -0.20217,0.95662 c -0.02,0.0947 0.0038,0.19335 0.06473,0.26853 0.06096,0.0752 0.152539,0.11884 0.249339,0.11884 l 0.625281,0 z M 12.773741,4.75539 7.5021019,1.49209 C 7.3477151,1.39699 7.1736728,1.34925 6.9996305,1.34925 c -0.1740423,0 -0.3482077,0.0477 -0.5016586,0.14284 l -5.271713,3.2633 C 1.0854931,4.84249 0.99999905,4.99633 0.99999905,5.1619 c 0,0.1656 0.085494,0.31949 0.22625985,0.40673 l 5.2716883,3.26333 c 0.153451,0.0952 0.3276163,0.14284 0.5016586,0.14284 0.1740423,0 0.3481092,-0.0477 0.5024714,-0.14284 L 12.773741,5.56863 c 0.140766,-0.0872 0.22626,-0.24113 0.22626,-0.40673 0,-0.16557 -0.08549,-0.31946 -0.22626,-0.40651 z M 6.9996059,9.78508 c -0.3283798,0 -0.6488777,-0.0912 -0.928242,-0.26411 l -3.0750017,-1.90368 0,3.27796 c 0,0.97016 1.7931578,1.7555 4.0032436,1.7555 2.2108742,0 4.0038842,-0.78536 4.0038842,-1.7555 l 0,-3.27796 -3.0748786,1.90368 C 7.6492472,9.69388 7.3279857,9.78508 6.9996059,9.78508 Z"></path></g></svg>
+                </span>
+                <div class="p-[1px] rounded-xl bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 max-w-[600px]">
+                  <div class="bg-white dark:bg-gray-900 rounded-xl p-4 shadow-md transform transition-transform hover:scale-[1.02]">
+                    <h3 class="mb-1 text-lg lg:text-xl font-semibold text-gray-900 dark:text-white">Thiru Seven Hills Polytechnic College</h3>
+                    <time class="block mb-2 text-sm text-gray-600 dark:text-gray-400"><i class="fa-solid fa-calendar-days w-2 h-2"></i>&nbsp;&nbsp; 2020–2023 &nbsp;&nbsp;DCE</time>
+                    <p class="text-base text-gray-700 dark:text-gray-200">Diploma in Computer Science and Engineering under DOTE curriculum.</p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Bachelor's -->
+              <li class="ms-8">
+                <span class="absolute flex items-center justify-center w-7 h-7 bg-purple-200 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-purple-900">
+                  <svg class="w-4 h-3.5 text-purple-800 dark:text-purple-300" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m 12.499079,12.25525 c 0.0968,0 0.188377,-0.0436 0.249339,-0.11884 0.06096,-0.0752 0.08473,-0.17385 0.06473,-0.26853 l -0.202146,-0.95662 c 0.115125,-0.11137 0.187491,-0.26686 0.187491,-0.43975 0,-0.182 -0.08106,-0.34343 -0.206876,-0.45558 l 0,-3.32202 -0.810333,0.50146 0,2.82056 c -0.125815,0.11215 -0.2069,0.27358 -0.2069,0.45558 0,0.17291 0.07239,0.32841 0.187515,0.43975 l -0.20217,0.95662 c -0.02,0.0947 0.0038,0.19335 0.06473,0.26853 0.06096,0.0752 0.152539,0.11884 0.249339,0.11884 l 0.625281,0 z M 12.773741,4.75539 7.5021019,1.49209 C 7.3477151,1.39699 7.1736728,1.34925 6.9996305,1.34925 c -0.1740423,0 -0.3482077,0.0477 -0.5016586,0.14284 l -5.271713,3.2633 C 1.0854931,4.84249 0.99999905,4.99633 0.99999905,5.1619 c 0,0.1656 0.085494,0.31949 0.22625985,0.40673 l 5.2716883,3.26333 c 0.153451,0.0952 0.3276163,0.14284 0.5016586,0.14284 0.1740423,0 0.3481092,-0.0477 0.5024714,-0.14284 L 12.773741,5.56863 c 0.140766,-0.0872 0.22626,-0.24113 0.22626,-0.40673 0,-0.16557 -0.08549,-0.31946 -0.22626,-0.40651 z M 6.9996059,9.78508 c -0.3283798,0 -0.6488777,-0.0912 -0.928242,-0.26411 l -3.0750017,-1.90368 0,3.27796 c 0,0.97016 1.7931578,1.7555 4.0032436,1.7555 2.2108742,0 4.0038842,-0.78536 4.0038842,-1.7555 l 0,-3.27796 -3.0748786,1.90368 C 7.6492472,9.69388 7.3279857,9.78508 6.9996059,9.78508 Z"></path></g></svg>
+                </span>
+                <div class="p-[1px] rounded-xl bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 max-w-[600px]">
+                  <div class="bg-white dark:bg-gray-900 rounded-xl p-4 shadow-md transform transition-transform hover:scale-[1.02]">
+                    <h3 class="mb-1 text-lg lg:text-xl font-semibold text-gray-900 dark:text-white">Velammal Institute of Technology</h3>
+                    <time class="block mb-2 text-sm text-gray-600 dark:text-gray-400"><i class="fa-solid fa-calendar-days w-2 h-2"></i>&nbsp;&nbsp; 2023–2026 &nbsp;&nbsp;BE</time>
+                    <p class="text-base text-gray-700 dark:text-gray-200">Bachelor's Degree in Computer Science and Engineering under Anna University.</p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- End Dot -->
+              <div class="-ms-1.5 mt-4">
+                <div class="w-3 h-3 rounded-full bg-purple-300 dark:bg-purple-900"></div>
+              </div>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ! About Section End -->
+
+<!-- ? Skills Section Start -->
+<section id="skills" class="scroll-mt-10 " data-section="skills">
+  <div class="relative container min-h-screen w-full px-4 pt-24 flex flex-col">    
+      <div class=" -mt-10 mb-5 md:mb-12">
+        <h2 class="h2-style ">
+          My <span class="gradient">Skills</span>
+        </h2>
+        </div>
+    <!-- Responsive 2-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20">
+  <!-- Frontend Card -->
+  <div class=" rounded-2xl shadow-lg p-6 hover:scale-[1.004] transition-transform duration-300 ">
+    <h3 class="h3-style h3-frontLine mb-4"><span class="w-1.5  md:w-2 h-5.5 sm:h-7 md:h-7.5 lg:h-8.5 xl:h-9.5 bg-[#7e22ce] rounded-full"></span>Frontend</h3>
+    <ul id="frontend-skills" class="space-y-4"></ul>
+  </div>
+
+  <!-- Backend Card -->
+  <div class=" rounded-2xl shadow-lg p-6 hover:scale-[1.004] transition-transform duration-300">
+    <h3 class="h3-style h3-frontLine mb-4"><span class="w-1.5 md:w-2 h-5.5 sm:h-7 md:h-7.5 lg:h-8.5 xl:h-9.5 bg-[#7e22ce] rounded-full"></span>Backend</h3>
+    <ul id="backend-skills" class="space-y-4"></ul>
+  </div>
+</div>
+
+
+
+  <!-- ? Skills Scroll Section Using <marquee> -->
+<div class="relative w-full max-w-screen-2xl mx-auto my-8 sm:my-6 overflow-hidden h-20 sm:h-24 md:h-28 lg:h-32
+            before:absolute before:left-0 before:top-0 before:h-full before:w-16 sm:before:w-24 
+            before:bg-gradient-to-r before:from-white dark:before:from-gray-900 before:to-transparent before:z-10 
+            after:absolute after:right-0 after:top-0 after:h-full after:w-16 sm:after:w-24 
+            after:bg-gradient-to-l after:from-white dark:after:from-gray-900 after:to-transparent after:z-10">
+  
+  <marquee behavior="scroll" direction="left" scrollamount="6" class="h-full flex items-center space-x-6 px-4">
+    <div class="flex items-center gap-6 whitespace-nowrap">
+      
+      <!-- Icon 1 -->
+      <div class="h-12 w-12 hover:scale-[1.03] transition-transform duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+       class="w-10 h-10 text-purple-500 hover:text-purple-800 transition-colors duration-300" 
+       viewBox="0 0 384 512" 
+       fill="currentColor">
+    <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/>
+    </svg>
+    </div>
+
+      <!-- Icon 2 -->
+      <div class="h-12 w-12 hover:scale-[1.03] transition-transform duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-purple-500 hover:text-purple-800 transition-colors duration-300" 
+      viewBox="0 0 384 512"
+      fill="currentColor">
+        <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
+    </div>
+
+      <!-- Icon 3 -->
+      <div class="h-12 w-12 hover:scale-[1.03] transition-transform duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10  text-purple-500 hover:text-purple-800 transition-colors duration-300" 
+      viewBox="0 0 384 512"
+      fill="currentColor">
+          <path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>
+      </div>
+      <!-- Icon 4 -->
+      <div class="h-12 w-12 hover:scale-[1.03] transition-transform duration-300">
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24" 
+    fill="currentColor"
+    class="w-11 h-11 text-purple-500 hover:text-purple-800 transition-colors duration-300">
+    <rect width="24" height="24" fill="none"></rect>
+    <path d="M12,10.11A1.87,1.87,0,1,1,10.13,12,1.88,1.88,0,0,1,12,10.11M7.37,20c.63.38,2-.2,3.6-1.7a24.22,24.22,0,0,1-1.51-1.9A22.7,22.7,0,0,1,7.06,16c-.51,2.14-.32,3.61.31,4m.71-5.74-.29-.51a7.91,7.91,0,0,0-.29.86c.27.06.57.11.88.16l-.3-.51m6.54-.76.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17,9,12.6,9,12,9s-1.17,0-1.71,0c-.29.47-.61.94-.91,1.47L8.57,12l.81,1.5c.3.53.62,1,.91,1.47.54,0,1.11,0,1.71,0s1.17,0,1.71,0c.29-.47.61-.94.91-1.47M12,6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0,10.44c.19-.22.39-.45.59-.72H11.41c.2.27.4.5.59.72M16.62,4c-.62-.38-2,.2-3.59,1.7a24.22,24.22,0,0,1,1.51,1.9,22.7,22.7,0,0,1,2.4.36c.51-2.14.32-3.61-.32-4m-.7,5.74.29.51a7.91,7.91,0,0,0,.29-.86c-.27-.06-.57-.11-.88-.16l.3.51m1.45-7c1.47.84,1.63,3.05,1,5.63,2.54.75,4.37,2,4.37,3.68s-1.83,2.93-4.37,3.68c.62,2.58.46,4.79-1,5.63s-3.45-.12-5.37-1.95c-1.92,1.83-3.91,2.79-5.38,1.95s-1.62-3-1-5.63c-2.54-.75-4.37-2-4.37-3.68S3.08,9.07,5.62,8.32c-.62-2.58-.46-4.79,1-5.63s3.46.12,5.38,1.95c1.92-1.83,3.91-2.79,5.37-1.95M17.08,12A22.51,22.51,0,0,1,18,14.26c2.1-.63,3.28-1.53,3.28-2.26S20.07,10.37,18,9.74A22.51,22.51,0,0,1,17.08,12M6.92,12A22.51,22.51,0,0,1,6,9.74c-2.1.63-3.28,1.53-3.28,2.26S3.93,13.63,6,14.26A22.51,22.51,0,0,1,6.92,12m9,2.26-.3.51c.31,0,.61-.1.88-.16a7.91,7.91,0,0,0-.29-.86l-.29.51M13,18.3c1.59,1.5,3,2.08,3.59,1.7s.83-1.82.32-4a22.7,22.7,0,0,1-2.4.36A24.22,24.22,0,0,1,13,18.3M8.08,9.74l.3-.51c-.31,0-.61.1-.88.16a7.91,7.91,0,0,0,.29.86l.29-.51M11,5.7C9.38,4.2,8,3.62,7.37,4s-.82,1.82-.31,4a22.7,22.7,0,0,1,2.4-.36A24.22,24.22,0,0,1,11,5.7Z"/>
+  </svg>
+</div>
+
+    <!-- icon 5 -->
+ <div class="h-10 w-12 hover:scale-[1.03] transition-transform duration-300">
+<svg xmlns="http://www.w3.org/2000/svg" 
+     viewBox="0 0 24 24" 
+     fill="currentColor"
+     class="w-9 h-9 text-purple-500 hover:text-purple-800 transition-colors duration-300">
+  <path d="M16.6295 16.563C17.5152 16.4705 18.1871 15.6997 18.1565 14.7748C18.126 13.8499 17.3624 13.1099 16.4462 13.1099H16.3851C15.4384 13.1408 14.7054 13.9424 14.7359 14.8981C14.7665 15.3606 14.9497 15.7614 15.2246 16.0389C14.1862 18.1046 12.5981 19.6153 10.2159 20.8794C8.59718 21.7426 6.91742 22.0509 5.23767 21.8351C3.86332 21.6501 2.79439 21.0335 2.12249 20.0161C1.14517 18.5054 1.05355 16.8713 1.87816 15.2373C2.45844 14.0657 3.37467 13.2024 3.95495 12.7708C3.83278 12.37 3.64954 11.6917 3.55791 11.1984C-0.870533 14.4357 -0.412419 18.8137 0.931386 20.8794C1.93924 22.4209 3.98549 23.3767 6.24552 23.3767C6.85634 23.3767 7.46716 23.315 8.07798 23.1609C11.9872 22.3901 14.9497 20.0469 16.6295 16.563ZM22.0047 12.7399C19.6836 9.99598 16.263 8.48525 12.3537 8.48525H11.8651C11.5902 7.93029 11.0099 7.56032 10.3686 7.56032H10.3075C9.3607 7.59115 8.62772 8.39276 8.65826 9.34853C8.6888 10.2735 9.45233 11.0134 10.3686 11.0134H10.4296C11.1015 10.9826 11.6818 10.5509 11.9261 9.96515H12.4759C14.797 9.96515 16.996 10.6434 18.9811 11.9692C20.5082 12.9866 21.6076 14.3123 22.2185 15.9155C22.7377 17.2105 22.7071 18.4745 22.1574 19.5536C21.3022 21.1877 19.8668 22.0818 17.9733 22.0818C16.7516 22.0818 15.5911 21.7118 14.9803 21.4343C14.6443 21.7426 14.0335 22.2359 13.6059 22.5442C14.9192 23.1609 16.263 23.5 17.5457 23.5C20.4776 23.5 22.646 21.866 23.4706 20.2319C24.3563 18.4437 24.2953 15.3606 22.0047 12.7399ZM6.48985 17.0871C6.52039 18.0121 7.28392 18.752 8.20015 18.752H8.26123C9.208 18.7212 9.94098 17.9196 9.91044 16.9638C9.8799 16.0389 9.11638 15.2989 8.20015 15.2989H8.13906C8.07798 15.2989 7.98636 15.2989 7.92528 15.3298C6.6731 13.2332 6.1539 10.9517 6.33714 8.48525C6.45931 6.63539 7.07013 5.03217 8.13906 3.70643C9.02475 2.56568 10.735 2.01072 11.8956 1.97989C15.133 1.91823 16.5073 5.98794 16.5989 7.62198C16.996 7.71448 17.6679 7.93029 18.126 8.08445C17.7595 3.08981 14.7054 0.5 11.7734 0.5C9.02475 0.5 6.48985 2.50402 5.482 5.46381C4.07711 9.41019 4.99334 13.2024 6.70364 16.193C6.55093 16.4088 6.45931 16.748 6.48985 17.0871Z" />
+</svg>
+</div>
+
+    <!-- Icon 6-->
+       <div class="h-9.5 w-12 hover:scale-[1.03] transition-transform duration-300">
+  <svg xmlns="http://www.w3.org/2000/svg" 
+       class="w-10 h-10 text-purple-500 hover:text-purple-800 transition-colors duration-300" 
+       viewBox="0 0 24 24" 
+       fill="currentColor">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1 1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z">
+    </path>
+  </svg>
+</div>
+
+    <!-- Icon 7 -->
+    <div class="h-8 w-12 hover:scale-[1.03] transition-transform duration-300">
+  <svg
+    fill="currentColor"
+    viewBox="0 0 32 32"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-12 h-12 text-purple-500 hover:text-purple-800 transition-colors duration-300"
+  >
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4.98488 2C3.61546 2 2.60217 3.19858 2.64753 4.49844C2.69105 5.74725 2.63451 7.36461 2.22732 8.68359C1.81892 10.0064 1.1282 10.8444 0 10.952V12.1666C1.1282 12.2742 1.81892 13.1122 2.22732 14.4351C2.63451 15.754 2.69105 17.3714 2.64753 18.6202C2.60217 19.9199 3.61546 21.1186 4.98508 21.1186H19.0169C20.3864 21.1186 21.3995 19.9201 21.3541 18.6202C21.3106 17.3714 21.3671 15.754 21.7743 14.4351C22.1829 13.1122 22.8718 12.2742 24 12.1666V10.952C22.8718 10.8444 22.1829 10.0064 21.7743 8.68359C21.3671 7.36481 21.3106 5.74725 21.3541 4.49844C21.3995 3.19878 20.3864 2 19.0169 2H4.98468H4.98488ZM16.2712 13.7687C16.2712 15.5586 14.9361 16.6441 12.7206 16.6441H8.94915C8.84127 16.6441 8.7378 16.6012 8.66152 16.5249C8.58523 16.4486 8.54237 16.3452 8.54237 16.2373V6.88136C8.54237 6.77347 8.58523 6.67001 8.66152 6.59372C8.7378 6.51743 8.84127 6.47458 8.94915 6.47458H12.6991C14.5464 6.47458 15.7588 7.47525 15.7588 9.01166C15.7588 10.09 14.9433 11.0555 13.9041 11.2245V11.2809C15.3187 11.4361 16.2712 12.4156 16.2712 13.7687ZM12.3094 7.76407H10.1589V10.8015H11.9701C13.3702 10.8015 14.1423 10.2377 14.1423 9.2299C14.1423 8.28556 13.4784 7.76407 12.3094 7.76407ZM10.1589 12.0068V15.3542H12.3885C13.8462 15.3542 14.6184 14.7692 14.6184 13.6699C14.6184 12.5704 13.8246 12.0066 12.2947 12.0066H10.1589V12.0068Z"></path> </g>
+  </svg>
+</div>
+
+  <!-- Icon 8 -->
+    <div class="h-12 w-12 hover:scale-[1.03] transition-transform duration-300">
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 32 32" 
+    fill="currentColor"
+    class="w-10 h-10 text-purple-500 hover:text-purple-800 transition-colors duration-300">
+    <path d="M13.168 30.901c5.401 0.346 13.695-0.191 13.891-2.747 0 0-0.377 0.968-4.464 1.738-2.257 0.407-4.855 0.639-7.508 0.639-2.173 0-4.309-0.156-6.398-0.457l0.239 0.028c0-0.001 0.691 0.571 4.24 0.799zM19 1.004s3.117 3.117-2.955 7.91c-4.869 3.845-1.11 6.038-0.001 8.543-2.842-2.566-4.927-4.821-3.529-6.922 2.054-3.085 7.744-4.58 6.486-9.531zM22.393 22.978c5.627-2.924 3.025-5.735 1.21-5.355-0.249 0.047-0.465 0.107-0.674 0.182l0.030-0.009c0.119-0.167 0.283-0.296 0.474-0.369l0.007-0.002c3.593-1.263 6.356 3.725-1.16 5.701 0.046-0.041 0.084-0.090 0.111-0.145l0.001-0.003zM12.616 17.512s-5.451 1.295-1.929 1.764c0.948 0.078 2.052 0.122 3.166 0.122 1.424 0 2.831-0.073 4.218-0.214l-0.174 0.014c2.257-0.19 4.521-0.596 4.521-0.596-0.531 0.232-0.982 0.477-1.409 0.756l0.037-0.022c-5.535 1.456-16.228 0.779-13.149-0.71 1.357-0.703 2.963-1.115 4.665-1.115 0.019 0 0.038 0 0.057 0h-0.003zM25.16 26.627s0.849 0.699-0.933 1.238c-3.389 1.027-14.106 1.336-17.081 0.041-1.070-0.466 0.937-1.112 1.567-1.247 0.291-0.074 0.626-0.117 0.97-0.117 0.023 0 0.045 0 0.068 0.001l-0.003-0c-1.191-0.839-7.693 1.646-3.303 2.358 11.972 1.941 21.821-0.875 18.716-2.274zM17.395 15.344c0.314 0.377 0.505 0.868 0.505 1.402 0 0.719-0.346 1.358-0.88 1.759l-0.006 0.004s3.673-1.897 1.986-4.271c-1.576-2.214-2.784-3.314 3.758-7.108 0-0.001-10.267 2.563-5.363 8.214zM11.346 20.915s-1.285 0.951 0.677 1.155c0.859 0.108 1.852 0.169 2.86 0.169 1.826 0 3.605-0.202 5.315-0.585l-0.162 0.030c0.344 0.322 0.755 0.578 1.209 0.744l0.025 0.008c-7.097 2.076-15.004 0.162-9.925-1.522zM12.065 24.198s-1.146 0.667 0.816 0.892c0.719 0.107 1.548 0.168 2.392 0.168 1.354 0 2.671-0.157 3.934-0.455l-0.116 0.023c0.467 0.285 1.010 0.557 1.577 0.782l0.074 0.026c-5.872 2.516-13.287-0.147-8.676-1.436z"/>
+  </svg>
+</div>
+
+  <!-- Icon 9 -->
+    <div class="h-9 w-12 hover:scale-[1.03] transition-transform duration-300">
+  <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+    class="w-10 h-9 text-purple-500 hover:text-purple-800 transition-colors duration-300"><path d="m23.693 10.7058-4.73-8.1844c-.4094-.7106-1.4166-1.2942-2.2402-1.2942H7.2725c-.819 0-1.8308.5836-2.2402 1.2942L.307 10.7058c-.4095.7106-.4095 1.873 0 2.5837l4.7252 8.189c.4094.7107 1.4166 1.2943 2.2402 1.2943h9.455c.819 0 1.826-.5836 2.2402-1.2942l4.7252-8.189c.4095-.7107.4095-1.8732 0-2.5838zM10.9763 5.7547c0-.5365.4377-.9742.9742-.9742s.9742.4377.9742.9742v5.8217c0 .5366-.4377.9742-.9742.9742s-.9742-.4376-.9742-.9742zm.9742 12.4294c-3.6427 0-6.6077-2.965-6.6077-6.6077.0047-2.0896.993-4.0521 2.6685-5.304a.8657.8657 0 0 1 1.2142.1788.8657.8657 0 0 1-.1788 1.2143c-2.1602 1.6048-2.612 4.6592-1.0072 6.8194 1.6049 2.1603 4.6593 2.612 6.8195 1.0072 1.2378-.9177 1.9673-2.372 1.9673-3.9157a4.8972 4.8972 0 0 0-1.9861-3.925c-.386-.2824-.466-.8284-.1836-1.2143.2824-.386.8283-.466 1.2143-.1835 1.6895 1.2471 2.6826 3.2238 2.6873 5.3228 0 3.6474-2.965 6.6077-6.6077 6.6077z"/></svg>
+</div>
+
+    <!-- Icon 10 -->
+      <div class="h-9 w-12 hover:scale-[1.03] transition-transform duration-300">
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="-78.5 0 413 413" 
+    fill="currentColor"
+    class="w-10 h-8 text-purple-500 hover:text-purple-800 transition-colors duration-300">
+    <g>
+      <path d="M87.9320692,36.714181 C83.382936,32.1427482 77.0364491,29.3196096 69.9808327,29.3196096 C62.9519759,29.3196096 56.6545483,32.1427482 52.1589343,36.714181 L52.0295962,36.714181 C47.4938428,41.2633143 44.6707042,47.614261 44.6707042,54.6431179 C44.6707042,61.6987343 47.4938428,67.9961618 52.0295962,72.5185355 L52.1589343,72.6211139 C56.6545483,77.1702472 62.9519759,79.9666261 69.9808327,79.9666261 C77.0364491,79.9666261 83.382936,77.1702472 87.9320692,72.6211139 L87.9989682,72.5185355 C92.5570213,67.9961618 95.3534002,61.6987343 95.3534002,54.6431179 C95.3534002,47.614261 92.5570213,41.2633143 87.9989682,36.714181 L87.9320692,36.714181 Z M69.9808327,383.353672 C77.0364491,383.353672 83.382936,380.481475 87.9320692,375.985861 L87.9989682,375.852063 C92.5570213,371.365368 95.3534002,365.014422 95.3534002,358.034624 C95.3534002,350.979008 92.5570213,344.654821 87.9989682,340.083388 L87.9320692,340.083388 C83.382936,335.458436 77.0364491,332.662057 69.9808327,332.662057 C62.9519759,332.662057 56.6545483,335.458436 52.1589343,340.083388 L52.0295962,340.083388 C47.4938428,344.654821 44.6707042,350.979008 44.6707042,358.034624 C44.6707042,365.014422 47.4938428,371.365368 52.0295962,375.852063 L52.1589343,375.985861 C56.6545483,380.481475 62.9519759,383.353672 69.9808327,383.353672 Z M207.953367,306.633879 C214.228495,304.988163 219.910452,300.960842 223.375821,294.873031 L223.844114,293.985504 C226.925929,288.209889 227.487881,281.546747 225.842165,275.641794 C224.183069,269.317607 220.106689,263.724849 214.032258,260.2238 L213.679923,259.987423 C207.76159,256.745051 201.018169,256.040381 194.82332,257.712857 C188.525893,259.282754 182.870696,263.488472 179.423166,269.527223 C175.931037,275.507996 175.199608,282.407514 176.872084,288.758461 C178.598078,295.002369 182.634319,300.648647 188.66861,304.176455 L188.70875,304.176455 C194.756421,307.650744 201.60688,308.279595 207.953367,306.633879 Z M95.9688712,180.386512 C89.3146489,173.750129 80.1450235,169.59347 69.9808327,169.59347 C59.8567813,169.59347 50.7094556,173.750129 44.0686131,180.386512 C37.4589901,187.000595 33.38261,196.147921 33.38261,206.285352 C33.38261,216.449543 37.4589901,225.623628 44.0686131,232.31353 C50.7094556,238.896393 59.8567813,243.026292 69.9808327,243.026292 C80.1450235,243.026292 89.3146489,238.896393 95.9688712,232.31353 C102.591874,225.623628 106.668254,216.449543 106.668254,206.285352 C106.668254,196.147921 102.591874,187.000595 95.9688712,180.386512 Z M81.3581257,137.223266 C96.0848295,139.64947 109.335295,146.705086 119.445967,156.896037 L119.526245,156.896037 C121.131822,158.514993 122.701719,160.267747 124.151198,162.042801 L149.434566,147.414216 C146.036096,137.142987 145.879999,126.403464 148.609478,116.341852 C152.217565,102.85501 160.959037,90.7819674 174.062325,83.2045386 L174.494938,82.9458624 C187.455508,75.6003502 202.191132,74.0839725 215.495117,77.6920595 C228.964119,81.2956866 241.11744,90.0772977 248.681489,103.171665 L248.681489,103.198425 C256.209859,116.212514 257.739616,131.157755 254.144909,144.591077 C250.563582,158.069 241.781971,170.222321 228.692063,177.746231 L225.240074,179.788881 L224.887739,179.788881 C212.779016,185.560036 199.461652,186.452023 187.232511,183.23641 C177.188739,180.569369 167.974514,174.976611 160.7628,167.006708 L135.519571,181.590694 C138.418528,189.270702 140.028564,197.55726 140.028564,206.285352 C140.028564,214.986684 138.418528,223.375821 135.519571,231.109347 L160.7628,245.639814 C167.974514,237.567333 177.188739,232.077153 187.232511,229.410112 C200.701514,225.726206 215.637835,227.296103 228.692063,234.900292 L229.526071,235.292766 L229.526071,235.346285 C242.138765,242.972773 250.603721,254.78714 254.144909,268.113424 C257.739616,281.466468 256.209859,296.416169 248.681489,309.457017 L248.226576,310.371304 L248.173057,310.291025 C240.609008,322.86358 228.692063,331.382055 215.535256,334.985683 C202.035034,338.54025 187.103173,337.023873 174.062325,329.526723 L174.062325,329.419684 C160.959037,321.842255 152.217565,309.742453 148.609478,296.286831 C145.879999,286.251978 146.036096,275.507996 149.434566,265.241226 L124.151198,250.65724 C122.701719,252.436754 121.131822,254.10923 119.526245,255.728186 L119.445967,255.804005 C109.335295,265.945896 96.0848295,273.001512 81.3581257,275.351898 L81.3581257,304.568929 C91.8523516,306.763217 101.258354,312.01702 108.630625,319.384832 L108.666305,319.46511 C118.54506,329.290346 124.65963,342.982345 124.65963,358.034624 C124.65963,373.037844 118.54506,386.645104 108.666305,396.523859 L108.630625,396.679957 C98.6849713,406.558712 85.0331117,412.673282 69.9808327,412.673282 C55.0088325,412.673282 41.3391332,406.558712 31.4202388,396.679957 L31.3845593,396.679957 L31.3845593,396.523859 C21.4924245,386.645104 15.3644745,373.037844 15.3644745,358.034624 C15.3644745,342.982345 21.4924245,329.290346 31.3845593,319.46511 L31.3845593,319.384832 L31.4202388,319.384832 C38.7791307,312.01702 48.1985125,306.763217 58.6659788,304.568929 L58.6659788,275.351898 C43.9258952,273.001512 30.7155691,265.945896 20.6182773,255.804005 L20.5112389,255.728186 C7.88962418,243.053052 0,225.623628 0,206.285352 C0,187.000595 7.88962418,169.571171 20.5112389,156.896037 L20.6182773,156.896037 C30.7155691,146.705086 43.9258952,139.64947 58.6659788,137.223266 L58.6659788,108.135573 C48.1985125,105.861006 38.7791307,100.611663 31.4202388,93.2929105 L31.3845593,93.2929105 L31.3845593,93.2126317 C21.4924245,83.2848174 15.3644745,69.6953969 15.3644745,54.6431179 C15.3644745,39.6666577 21.4924245,25.9478991 31.3845593,16.0691441 L31.4202388,16.0200848 C41.3391332,6.11457024 55.0088325,0 69.9808327,0 C85.0331117,0 98.6849713,6.11457024 108.630625,16.0200848 L108.630625,16.0691441 L108.666305,16.0691441 C118.54506,25.9478991 124.65963,39.6666577 124.65963,54.6431179 C124.65963,69.6953969 118.54506,83.2848174 108.666305,93.2126317 L108.630625,93.2929105 C101.258354,100.611663 91.8523516,105.861006 81.3581257,108.135573 L81.3581257,137.223266 Z M223.375821,117.83147 L223.166204,117.519275 C219.674075,111.636621 214.108077,107.716339 207.953367,106.017104 C201.60688,104.344628 194.756421,105.053758 188.66861,108.528047 L188.70875,108.528047 C182.634319,111.975576 178.571319,117.621853 176.872084,123.946041 C175.199608,130.216708 175.931037,137.142987 179.423166,143.177278 L179.539124,143.337836 C183.040173,149.291848 188.606171,153.28795 194.82332,154.906906 C201.071688,156.65966 208.033646,155.928231 214.032258,152.427182 L214.357833,152.271085 C220.262787,148.743276 224.196449,143.177278 225.842165,137.062708 C227.51464,130.76528 226.85011,123.865762 223.375821,117.83147 Z"> </path>
+    </g>
+  </svg>
+</div>
+
+    <!-- Icon 11 -->
+    <div class="h-9 w-12 hover:scale-[1.03] transition-transform duration-300">
+  <svg 
+    fill="currentColor"
+    viewBox="0 0 24 24" 
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-10 h-9 text-purple-500 hover:text-purple-800 transition-colors duration-300"
+  >
+    <path d="M4.237.001c-.312-.013-.665.072-.828.457-.158.374-.283 1.188-.34 2.276l1.223.591c-.02-.737.007-1.43.076-2.066-.026.299-.056.96.006 2.039.019.342.049.725.088 1.15.002.024.002.047.007.069a45.485 45.485 0 0 0 .309 2.412c.057.368.126.752.195 1.16l-.01.01c.014.01.015.018.014.023l.03.16c.03.162.06.328.093.494l.108.553.056.289a61.72 61.72 0 0 0 .457 2.068c.09.382.186.78.287 1.186.098.386.199.783.309 1.193.096.362.199.735.303 1.117.003.018.012.036.015.055a145.826 145.826 0 0 0 .34 1.185l.049.174c.078.261.158.533.242.805a4.2 4.2 0 0 1-.293-.135l-.19-.654c-.02-.077-.042-.148-.062-.225l-.002-.004-.004-.002c-.087-.3-.17-.607-.257-.916-.023-.087-.044-.173-.069-.263l-.314-1.178c-.1-.381-.194-.765-.29-1.154-.094-.39-.185-.78-.277-1.172-.093-.401-.181-.8-.265-1.203-.085-.396-.161-.798-.24-1.193a50.315 50.315 0 0 1-.211-1.17c-.004-.013-.006-.03-.01-.041l.004-.002c-.057-.386-.116-.77-.174-1.15a60.905 60.905 0 0 1-.154-1.204 27.447 27.447 0 0 1-.172-2.41l-1.22-.59c-.004.074-.01.15-.013.23-.012.294-.02.605-.023.93a45.3 45.3 0 0 0 .006 1.157c.009.37.025.755.045 1.148.02.336.042.675.07 1.022l.002.039.006.004c.003.023.007.05.006.076.033.368.064.739.107 1.115a34.493 34.493 0 0 0 .303 2.125c.01.064.024.131.035.195a23.418 23.418 0 0 0 .547 2.32c.07.237.14.464.21.68.063.182.13.365.194.545.155.422.327.832.512 1.232l.006.004a.318.318 0 0 0 .02.05c.225.485.475.95.755 1.395.01.013.02.033.03.047-.455-.183-1.259-.098-1.253-.097.83.288 1.557.64 2.016 1.175-.183.2-.523.352-.953.477.594.064.924-.039 1.045-.092-.31.26-.483.732-.635 1.24.35-.57.696-.949 1.033-1.094.078.258.162.524.244.788A147.532 147.532 0 0 0 5.157 24a.56.56 0 0 0 .43-.312c.13-.282.83-1.775 1.908-3.875.413 1.303.88 2.679 1.386 4.109a.494.494 0 0 0 .076-.465 103.735 103.735 0 0 1-1.308-3.945c.154-.299.316-.612.484-.932.125.04.255.094.389.155.203.186.352.491.482.84a1.515 1.515 0 0 0-.334-1.098c1.335.258 2.547.09 3.287-.81a3.97 3.97 0 0 0 .192-.258c-.325.304-.682.404-1.313.273.996-.281 1.523-.617 2.035-1.22.12-.145.244-.303.371-.48-.943.722-1.927.822-2.9.493l-.045-.018c.914.02 2.203-.474 3.092-1.189.41-.33.796-.73 1.17-1.21.28-.359.55-.76.82-1.216.234-.393.468-.824.7-1.293a2.83 2.83 0 0 1-.74.137l-.144.008c-.048.002-.093 0-.146.002.885-.198 1.5-.74 1.994-1.447-.24.117-.628.262-1.07.297-.058.006-.12.006-.182.006-.013-.002-.028 0-.047-.002.306-.078.574-.178.81-.309a3.363 3.363 0 0 0 .358-.236c.044-.037.088-.07.13-.106.099-.086.193-.18.28-.287.028-.034.056-.063.08-.098.036-.05.073-.098.104-.146a8.388 8.388 0 0 0 .51-.828c.015-.031.032-.057.046-.088.04-.084.08-.16.11-.227.042-.099.074-.179.092-.238a.515.515 0 0 1-.108.051c-.273.112-.727.187-1.086.201-.004 0-.008 0-.013.004h-.067c.72-.214 1.067-.45 1.422-.818a13.883 13.883 0 0 0 1.154-1.428c.264-.37.505-.738.692-1.072a6.5 6.5 0 0 0 .298-.592c.066-.157.122-.305.172-.45-.466.01-.986.011-1.48 0 .495.01 1.015.007 1.484-.005.5-1.485.063-2.262.063-2.262s-.526-1.212-1.4-.851c-.426.175-1.172.73-2.083 1.56l.514 1.45a17.561 17.561 0 0 1 1.703-1.602c-.257.22-.807.726-1.615 1.644-.256.29-.537.624-.844.997-.017.02-.035.038-.047.06a51.435 51.435 0 0 0-1.666 2.187c-.248.34-.498.704-.765 1.088h-.016c.002.02-.004.028-.01.032l-.101.152c-.104.155-.213.31-.318.47l-.352.534c-.061.09-.124.181-.186.277-.184.282-.367.573-.558.873a97.351 97.351 0 0 0-1.428 2.338 96.866 96.866 0 0 0-1.341 2.343c-.012.017-.02.04-.034.057a197.256 197.256 0 0 0-.668 1.223l-.097.181c-.17.318-.346.642-.52.979 0 .004-.005.008-.006.013-.026.048-.05.093-.072.141-.117.222-.218.424-.45.87a1.352 1.352 0 0 0-.233-.182l.345-.65c.047-.089.096-.177.143-.27l.04-.077.546-1.001.13-.233v-.006l-.001-.006c.169-.31.345-.62.52-.94.051-.087.102-.173.153-.265.224-.395.454-.794.684-1.197a91.685 91.685 0 0 1 2.135-3.504c.247-.386.503-.77.754-1.152.092-.138.182-.272.279-.41a72.9 72.9 0 0 1 .48-.701c.007-.012.019-.024.026-.037h.006c.26-.356.517-.713.773-1.065.278-.373.554-.735.83-1.09a31.075 31.075 0 0 1 1.777-2.075l-.515-1.446c-.06.057-.126.116-.192.178a32.37 32.37 0 0 0-.758.729c-.295.294-.597.606-.912.935a46.032 46.032 0 0 0-1.632 1.838l-.03.033.002.008c-.017.02-.033.044-.054.064-.266.323-.538.649-.801.985a39.105 39.105 0 0 0-1.445 1.95c-.043.06-.085.126-.127.186a26.458 26.458 0 0 0-1.403 2.303c-.13.247-.256.485-.37.715-.096.195-.187.395-.278.591-.21.463-.398.93-.566 1.399l.002.006a.36.36 0 0 0-.026.058c-.108.303-.203.608-.29.914-.14.174-.302.325-.483.46a3.505 3.505 0 0 0-.131-.153 5.148 5.148 0 0 0 .824-2.211 6.4 6.4 0 0 0-.016-1.488c-.046-.4-.126-.82-.238-1.274-.097-.393-.217-.81-.363-1.248-.091.185-.22.367-.379.545l-.086.094c-.029.032-.06.06-.092.094.434-.674.486-1.397.358-2.148a2.722 2.722 0 0 1-.49.85c-.033.038-.072.077-.11.116-.01.007-.019.018-.033.028.144-.24.25-.467.318-.698a1.29 1.29 0 0 0 .04-.146 2.85 2.85 0 0 0 .038-.225l.018-.146a2.11 2.11 0 0 0-.002-.354c-.003-.04-.004-.076-.01-.113-.01-.055-.016-.105-.027-.154a7.416 7.416 0 0 0-.193-.84c-.01-.028-.015-.056-.026-.084-.027-.079-.048-.149-.072-.209a2.1 2.1 0 0 0-.09-.209.455.455 0 0 1-.035.1c-.102.24-.34.57-.557.8-.003.003-.007.005-.007.01l-.04.043c.318-.58.39-.946.385-1.398a12.274 12.274 0 0 0-.16-1.615 10.68 10.68 0 0 0-.232-1.104 5.853 5.853 0 0 0-.18-.558 6.337 6.337 0 0 0-.172-.391 26.18 26.18 0 0 0 .002-.004C5.576.341 4.82.124 4.82.124s-.27-.11-.582-.123z"/>
+  </svg>
+</div>
+
+  <!-- Icon 12 -->
+      <div class="h-9 w-12 hover:scale-[1.03] transition-transform duration-300">
+  <svg
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-9 h-8 text-purple-500 hover:text-purple-800 transition-colors duration-300"
+  >
+    <path d="M5.365 0 9.98 7.994h8.95L14.31 0H5.366zm-.431.248L.46 7.994l4.613 8.008L9.55 8.24 4.934.248zm13.992 7.75-4.475 7.76 4.617 7.992 4.471-7.744-4.613-8.008zm-4.905 8.006-8.95.002L9.688 24h8.946l-4.615-7.994.001-.002z"/>
+  </svg>
+</div>
+
+<!-- Icon 13 -->
+  <div class="h-9 w-12 hover:scale-105 transition-transform duration-300">
+  <svg
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-10 h-8 text-purple-500 hover:text-purple-800 transition-colors duration-300"
+  >
+    <g id="SVGRepo_iconCarrier"><path d="m24.129 23.412-.508-.484c-.251-.331-.518-.624-.809-.891l-.005-.004q-.448-.407-.931-.774-.387-.266-1.064-.641c-.371-.167-.661-.46-.818-.824l-.004-.01-.048-.024c.212-.021.406-.06.592-.115l-.023.006.57-.157c.236-.074.509-.122.792-.133h.006c.298-.012.579-.06.847-.139l-.025.006q.194-.048.399-.109t.351-.109v-.169q-.145-.217-.351-.496c-.131-.178-.278-.333-.443-.468l-.005-.004q-.629-.556-1.303-1.076c-.396-.309-.845-.624-1.311-.916l-.068-.04c-.246-.162-.528-.312-.825-.435l-.034-.012q-.448-.182-.883-.399c-.097-.048-.21-.09-.327-.119l-.011-.002c-.117-.024-.217-.084-.29-.169l-.001-.001c-.138-.182-.259-.389-.355-.609l-.008-.02q-.145-.339-.314-.651-.363-.702-.702-1.427t-.651-1.452q-.217-.484-.399-.967c-.134-.354-.285-.657-.461-.942l.013.023c-.432-.736-.863-1.364-1.331-1.961l.028.038c-.463-.584-.943-1.106-1.459-1.59l-.008-.007c-.509-.478-1.057-.934-1.632-1.356l-.049-.035q-.896-.651-1.96-1.282c-.285-.168-.616-.305-.965-.393l-.026-.006-1.113-.278-.629-.048q-.314-.024-.629-.024c-.148-.078-.275-.171-.387-.279-.11-.105-.229-.204-.353-.295l-.01-.007c-.605-.353-1.308-.676-2.043-.93l-.085-.026c-.193-.113-.425-.179-.672-.179-.176 0-.345.034-.499.095l.009-.003c-.38.151-.67.458-.795.84l-.003.01c-.073.172-.115.371-.115.581 0 .368.13.705.347.968l-.002-.003q.544.725.834 1.14.217.291.448.605c.141.188.266.403.367.63l.008.021c.056.119.105.261.141.407l.003.016q.048.206.121.448.217.556.411 1.14c.141.425.297.785.478 1.128l-.019-.04q.145.266.291.52t.314.496c.065.098.147.179.241.242l.003.002c.099.072.164.185.169.313v.001c-.114.168-.191.369-.217.586l-.001.006c-.035.253-.085.478-.153.695l.008-.03c-.223.666-.351 1.434-.351 2.231 0 .258.013.512.04.763l-.003-.031c.06.958.349 1.838.812 2.6l-.014-.025c.197.295.408.552.641.787.168.188.412.306.684.306.152 0 .296-.037.422-.103l-.005.002c.35-.126.599-.446.617-.827v-.002c.048-.474.12-.898.219-1.312l-.013.067c.024-.063.038-.135.038-.211 0-.015-.001-.03-.002-.045v.002q-.012-.109.133-.206v.048q.145.339.302.677t.326.677c.295.449.608.841.952 1.202l-.003-.003c.345.372.721.706 1.127 1.001l.022.015c.212.162.398.337.566.528l.004.004c.158.186.347.339.56.454l.01.005v-.024h.048c-.039-.087-.102-.157-.18-.205l-.002-.001c-.079-.044-.147-.088-.211-.136l.005.003q-.217-.217-.448-.484t-.423-.508q-.508-.702-.969-1.467t-.871-1.555q-.194-.387-.375-.798t-.351-.798c-.049-.099-.083-.213-.096-.334v-.005c-.006-.115-.072-.214-.168-.265l-.002-.001c-.121.206-.255.384-.408.545l.001-.001c-.159.167-.289.364-.382.58l-.005.013c-.141.342-.244.739-.289 1.154l-.002.019q-.072.641-.145 1.318l-.048.024-.024.024c-.26-.053-.474-.219-.59-.443l-.002-.005q-.182-.351-.326-.69c-.248-.637-.402-1.374-.423-2.144v-.009c-.009-.122-.013-.265-.013-.408 0-.666.105-1.308.299-1.91l-.012.044q.072-.266.314-.896t.097-.871c-.05-.165-.143-.304-.265-.41l-.001-.001c-.122-.106-.233-.217-.335-.335l-.003-.004q-.169-.244-.326-.52t-.278-.544c-.165-.382-.334-.861-.474-1.353l-.022-.089c-.159-.565-.336-1.043-.546-1.503l.026.064c-.111-.252-.24-.47-.39-.669l.006.008q-.244-.326-.436-.617-.244-.314-.484-.605c-.163-.197-.308-.419-.426-.657l-.009-.02c-.048-.097-.09-.21-.119-.327l-.002-.011c-.011-.035-.017-.076-.017-.117 0-.082.024-.159.066-.223l-.001.002c.011-.056.037-.105.073-.145.039-.035.089-.061.143-.072h.002c.085-.055.188-.088.3-.088.084 0 .165.019.236.053l-.003-.001c.219.062.396.124.569.195l-.036-.013q.459.194.847.375c.298.142.552.292.792.459l-.018-.012q.194.121.387.266t.411.291h.339q.387 0 .822.037c.293.023.564.078.822.164l-.024-.007c.481.143.894.312 1.286.515l-.041-.019q.593.302 1.125.641c.589.367 1.098.743 1.577 1.154l-.017-.014c.5.428.954.867 1.38 1.331l.01.012c.416.454.813.947 1.176 1.464l.031.047c.334.472.671 1.018.974 1.584l.042.085c.081.154.163.343.234.536l.011.033q.097.278.217.57.266.605.57 1.221t.57 1.198l.532 1.161c.187.406.396.756.639 1.079l-.011-.015c.203.217.474.369.778.422l.008.001c.368.092.678.196.978.319l-.047-.017c.143.065.327.134.516.195l.04.011c.212.065.396.151.565.259l-.009-.005c.327.183.604.363.868.559l-.021-.015q.411.302.822.57.194.145.651.423t.484.52c-.114-.004-.249-.007-.384-.007-.492 0-.976.032-1.45.094l.056-.006c-.536.072-1.022.203-1.479.39l.04-.014c-.113.049-.248.094-.388.129l-.019.004c-.142.021-.252.135-.266.277v.001c.061.076.11.164.143.26l.002.006c.034.102.075.19.125.272l-.003-.006c.119.211.247.393.391.561l-.004-.005c.141.174.3.325.476.454l.007.005q.244.194.508.399c.161.126.343.25.532.362l.024.013c.284.174.614.34.958.479l.046.016c.374.15.695.324.993.531l-.016-.011q.291.169.58.375t.556.399c.073.072.137.152.191.239l.003.005c.091.104.217.175.36.193h.003v-.048c-.088-.067-.153-.16-.184-.267l-.001-.004c-.025-.102-.062-.191-.112-.273l.002.004zm-18.576-19.205q-.194 0-.363.012c-.115.008-.222.029-.323.063l.009-.003v.024h.048q.097.145.244.326t.266.351l.387.798.048-.024c.113-.082.2-.192.252-.321l.002-.005c.052-.139.082-.301.082-.469 0-.018 0-.036-.001-.054v.003c-.045-.044-.082-.096-.108-.154l-.001-.003-.081-.182c-.053-.084-.127-.15-.214-.192l-.003-.001c-.094-.045-.174-.102-.244-.169z"></path></g>
+  </svg>
+</div>
+
+<!-- Icon 14 -->
+    <div class="h-9 w-12 hover:scale-[1.03] transition-transform duration-300">
+  <svg
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-9 h-9 text-purple-500 hover:text-purple-800 transition-colors duration-300"
+  >
+   <svg fill="" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M22.839 0c-1.245 0.011-2.479 0.188-3.677 0.536l-0.083 0.027c-0.751-0.131-1.516-0.203-2.276-0.219-1.573-0.027-2.923 0.353-4.011 0.989-1.073-0.369-3.297-1.016-5.641-0.885-1.629 0.088-3.411 0.583-4.735 1.979-1.312 1.391-2.009 3.547-1.864 6.485 0.041 0.807 0.271 2.124 0.656 3.837 0.38 1.709 0.917 3.709 1.589 5.537 0.672 1.823 1.405 3.463 2.552 4.577 0.572 0.557 1.364 1.032 2.296 0.991 0.652-0.027 1.24-0.313 1.751-0.735 0.249 0.328 0.516 0.468 0.755 0.599 0.308 0.167 0.599 0.281 0.907 0.355 0.552 0.14 1.495 0.323 2.599 0.135 0.375-0.063 0.771-0.187 1.167-0.359 0.016 0.437 0.032 0.869 0.047 1.307 0.057 1.38 0.095 2.656 0.505 3.776 0.068 0.183 0.251 1.12 0.969 1.953 0.724 0.833 2.129 1.349 3.739 1.005 1.131-0.24 2.573-0.677 3.532-2.041 0.948-1.344 1.375-3.276 1.459-6.412 0.020-0.172 0.047-0.312 0.072-0.448l0.224 0.021h0.027c1.208 0.052 2.521-0.12 3.62-0.631 0.968-0.448 1.703-0.901 2.239-1.708 0.131-0.199 0.281-0.443 0.319-0.86 0.041-0.411-0.199-1.063-0.595-1.364-0.791-0.604-1.291-0.375-1.828-0.26-0.525 0.115-1.063 0.176-1.599 0.192 1.541-2.593 2.645-5.353 3.276-7.792 0.375-1.443 0.584-2.771 0.599-3.932 0.021-1.161-0.077-2.187-0.771-3.077-2.177-2.776-5.235-3.548-7.599-3.573-0.073 0-0.145 0-0.219 0zM22.776 0.855c2.235-0.021 5.093 0.604 7.145 3.228 0.464 0.589 0.6 1.448 0.584 2.511s-0.213 2.328-0.573 3.719c-0.692 2.699-2.011 5.833-3.859 8.652 0.063 0.047 0.135 0.088 0.208 0.115 0.385 0.161 1.265 0.296 3.025-0.063 0.443-0.095 0.767-0.156 1.105 0.099 0.167 0.14 0.255 0.349 0.244 0.568-0.020 0.161-0.077 0.317-0.177 0.448-0.339 0.509-1.009 0.995-1.869 1.396-0.76 0.353-1.855 0.536-2.817 0.547-0.489 0.005-0.937-0.032-1.319-0.152l-0.020-0.004c-0.147 1.411-0.484 4.203-0.704 5.473-0.176 1.025-0.484 1.844-1.072 2.453-0.589 0.615-1.417 0.979-2.537 1.219-1.385 0.297-2.391-0.021-3.041-0.568s-0.948-1.276-1.125-1.719c-0.124-0.307-0.187-0.703-0.249-1.235-0.063-0.531-0.104-1.177-0.136-1.911-0.041-1.12-0.057-2.24-0.041-3.365-0.577 0.532-1.296 0.88-2.068 1.016-0.921 0.156-1.739 0-2.228-0.12-0.24-0.063-0.475-0.151-0.693-0.271-0.229-0.12-0.443-0.255-0.588-0.527-0.084-0.156-0.109-0.337-0.073-0.509 0.041-0.177 0.145-0.328 0.287-0.443 0.265-0.215 0.615-0.333 1.14-0.443 0.959-0.199 1.297-0.333 1.5-0.496 0.172-0.135 0.371-0.416 0.713-0.828 0-0.015 0-0.036-0.005-0.052-0.619-0.020-1.224-0.181-1.771-0.479-0.197 0.208-1.224 1.292-2.468 2.792-0.521 0.624-1.099 0.984-1.713 1.011-0.609 0.025-1.163-0.281-1.631-0.735-0.937-0.912-1.688-2.48-2.339-4.251s-1.177-3.744-1.557-5.421c-0.375-1.683-0.599-3.037-0.631-3.688-0.14-2.776 0.511-4.645 1.625-5.828s2.641-1.625 4.131-1.713c2.672-0.151 5.213 0.781 5.724 0.979 0.989-0.672 2.265-1.088 3.859-1.063 0.756 0.011 1.505 0.109 2.24 0.292l0.027-0.016c0.323-0.109 0.651-0.208 0.984-0.28 0.907-0.215 1.833-0.324 2.76-0.339zM22.979 1.745h-0.197c-0.76 0.009-1.527 0.099-2.271 0.26 1.661 0.735 2.916 1.864 3.801 3 0.615 0.781 1.12 1.64 1.505 2.557 0.152 0.355 0.251 0.651 0.303 0.88 0.031 0.115 0.047 0.213 0.057 0.312 0 0.052 0.005 0.105-0.021 0.193 0 0.005-0.005 0.016-0.005 0.021 0.043 1.167-0.249 1.957-0.287 3.072-0.025 0.808 0.183 1.756 0.235 2.792 0.047 0.973-0.072 2.041-0.703 3.093 0.052 0.063 0.099 0.125 0.151 0.193 1.672-2.636 2.88-5.547 3.521-8.032 0.344-1.339 0.525-2.552 0.541-3.509 0.016-0.959-0.161-1.657-0.391-1.948-1.792-2.287-4.213-2.871-6.24-2.885zM16.588 2.088c-1.572 0.005-2.703 0.48-3.561 1.193-0.887 0.74-1.48 1.745-1.865 2.781-0.464 1.224-0.625 2.411-0.688 3.219l0.021-0.011c0.475-0.265 1.099-0.536 1.771-0.687 0.667-0.157 1.391-0.204 2.041 0.052 0.657 0.249 1.193 0.848 1.391 1.749 0.939 4.344-0.291 5.959-0.744 7.177-0.172 0.443-0.323 0.891-0.443 1.349 0.057-0.011 0.115-0.027 0.172-0.032 0.323-0.025 0.572 0.079 0.719 0.141 0.459 0.192 0.771 0.588 0.943 1.041 0.041 0.12 0.072 0.244 0.093 0.38 0.016 0.052 0.027 0.109 0.027 0.167-0.052 1.661-0.048 3.323 0.015 4.984 0.032 0.719 0.079 1.349 0.136 1.849 0.057 0.495 0.135 0.875 0.188 1.005 0.171 0.427 0.421 0.984 0.875 1.364 0.448 0.381 1.093 0.631 2.276 0.381 1.025-0.224 1.656-0.527 2.077-0.964 0.423-0.443 0.672-1.052 0.833-1.984 0.245-1.401 0.729-5.464 0.787-6.224-0.025-0.579 0.057-1.021 0.245-1.36 0.187-0.344 0.479-0.557 0.735-0.672 0.124-0.057 0.244-0.093 0.343-0.125-0.104-0.145-0.213-0.291-0.323-0.432-0.364-0.443-0.667-0.937-0.891-1.463-0.104-0.22-0.219-0.439-0.344-0.647-0.176-0.317-0.4-0.719-0.635-1.172-0.469-0.896-0.979-1.989-1.245-3.052-0.265-1.063-0.301-2.161 0.376-2.932 0.599-0.688 1.656-0.973 3.233-0.812-0.047-0.141-0.072-0.261-0.151-0.443-0.359-0.844-0.828-1.636-1.391-2.355-1.339-1.713-3.511-3.412-6.859-3.469zM7.735 2.156c-0.167 0-0.339 0.005-0.505 0.016-1.349 0.079-2.62 0.468-3.532 1.432-0.911 0.969-1.509 2.547-1.38 5.167 0.027 0.5 0.24 1.885 0.609 3.536 0.371 1.652 0.896 3.595 1.527 5.313 0.629 1.713 1.391 3.208 2.12 3.916 0.364 0.349 0.681 0.495 0.968 0.485 0.287-0.016 0.636-0.183 1.063-0.693 0.776-0.937 1.579-1.844 2.412-2.729-1.199-1.047-1.787-2.629-1.552-4.203 0.135-0.984 0.156-1.907 0.135-2.636-0.015-0.708-0.063-1.176-0.063-1.473 0-0.011 0-0.016 0-0.027v-0.005l-0.005-0.009c0-1.537 0.272-3.057 0.792-4.5 0.375-0.996 0.928-2 1.76-2.819-0.817-0.271-2.271-0.676-3.843-0.755-0.167-0.011-0.339-0.016-0.505-0.016zM24.265 9.197c-0.905 0.016-1.411 0.251-1.681 0.552-0.376 0.433-0.412 1.193-0.177 2.131 0.233 0.937 0.719 1.984 1.172 2.855 0.224 0.437 0.443 0.828 0.619 1.145 0.183 0.323 0.313 0.547 0.391 0.745 0.073 0.177 0.157 0.333 0.24 0.479 0.349-0.74 0.412-1.464 0.375-2.224-0.047-0.937-0.265-1.896-0.229-2.864 0.037-1.136 0.261-1.876 0.277-2.751-0.324-0.041-0.657-0.068-0.985-0.068zM13.287 9.355c-0.276 0-0.552 0.036-0.823 0.099-0.537 0.131-1.052 0.328-1.537 0.599-0.161 0.088-0.317 0.188-0.463 0.303l-0.032 0.025c0.011 0.199 0.047 0.667 0.063 1.365 0.016 0.76 0 1.728-0.145 2.776-0.323 2.281 1.333 4.167 3.276 4.172 0.115-0.469 0.301-0.944 0.489-1.443 0.541-1.459 1.604-2.521 0.708-6.677-0.145-0.677-0.437-0.953-0.839-1.109-0.224-0.079-0.457-0.115-0.697-0.109zM23.844 9.625h0.068c0.083 0.005 0.167 0.011 0.239 0.031 0.068 0.016 0.131 0.037 0.183 0.073 0.052 0.031 0.088 0.083 0.099 0.145v0.011c0 0.063-0.016 0.125-0.047 0.183-0.041 0.072-0.088 0.14-0.145 0.197-0.136 0.151-0.319 0.251-0.516 0.281-0.193 0.027-0.385-0.025-0.547-0.135-0.063-0.048-0.125-0.1-0.172-0.157-0.047-0.047-0.073-0.109-0.084-0.172-0.004-0.061 0.011-0.124 0.052-0.171 0.048-0.048 0.1-0.089 0.157-0.12 0.129-0.073 0.301-0.125 0.5-0.152 0.072-0.009 0.145-0.015 0.213-0.020zM13.416 9.849c0.068 0 0.147 0.005 0.22 0.015 0.208 0.032 0.385 0.084 0.525 0.167 0.068 0.032 0.131 0.084 0.177 0.141 0.052 0.063 0.077 0.14 0.073 0.224-0.016 0.077-0.048 0.151-0.1 0.208-0.057 0.068-0.119 0.125-0.192 0.172-0.172 0.125-0.385 0.177-0.599 0.151-0.215-0.036-0.412-0.14-0.557-0.301-0.063-0.068-0.115-0.141-0.157-0.219-0.047-0.073-0.067-0.156-0.057-0.24 0.021-0.14 0.141-0.219 0.256-0.26 0.131-0.043 0.271-0.057 0.411-0.052zM25.495 19.64h-0.005c-0.192 0.073-0.353 0.1-0.489 0.163-0.14 0.052-0.251 0.156-0.317 0.285-0.089 0.152-0.156 0.423-0.136 0.885 0.057 0.043 0.125 0.073 0.199 0.095 0.224 0.068 0.609 0.115 1.036 0.109 0.849-0.011 1.896-0.208 2.453-0.469 0.453-0.208 0.88-0.489 1.255-0.817-1.859 0.38-2.905 0.281-3.552 0.016-0.156-0.068-0.307-0.157-0.443-0.267zM14.787 19.765h-0.027c-0.072 0.005-0.172 0.032-0.375 0.251-0.464 0.52-0.625 0.848-1.005 1.151-0.385 0.307-0.88 0.469-1.875 0.672-0.312 0.063-0.495 0.135-0.615 0.192 0.036 0.032 0.036 0.043 0.093 0.068 0.147 0.084 0.333 0.152 0.485 0.193 0.427 0.104 1.124 0.229 1.859 0.104 0.729-0.125 1.489-0.475 2.141-1.385 0.115-0.156 0.124-0.391 0.031-0.641-0.093-0.244-0.297-0.463-0.437-0.52-0.089-0.043-0.183-0.068-0.276-0.084z"></path> </g></svg>
+</div>
+
+<!-- Icon 15 -->
+    <div class="h-9 w-12 hover:scale-[1.03] transition-transform duration-300">
+  <svg
+    fill="currentColor"
+    viewBox="0 0 32 32"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-10 h-9 text-purple-500 hover:text-purple-800 transition-colors duration-300"
+  >
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      <path d="M15.821 23.185s0-10.361 0.344-10.36c0.266 0 0.612 13.365 0.612 13.365-0.476-0.056-0.956-2.199-0.956-3.005zM22.489 12.945c-0.919-4.016-2.932-7.469-5.708-10.134l-0.007-0.006c-0.338-0.516-0.647-1.108-0.895-1.732l-0.024-0.068c0.001 0.020 0.001 0.044 0.001 0.068 0 0.565-0.253 1.070-0.652 1.409l-0.003 0.002c-3.574 3.034-5.848 7.505-5.923 12.508l-0 0.013c-0.001 0.062-0.001 0.135-0.001 0.208 0 4.957 2.385 9.357 6.070 12.115l0.039 0.028 0.087 0.063q0.241 1.784 0.412 3.576h0.601c0.166-1.491 0.39-2.796 0.683-4.076l-0.046 0.239c0.396-0.275 0.742-0.56 1.065-0.869l-0.003 0.003c2.801-2.597 4.549-6.297 4.549-10.404 0-0.061-0-0.121-0.001-0.182l0 0.009c-0.003-0.981-0.092-1.94-0.261-2.871l0.015 0.099z"></path>
+    </g>
+  </svg>
+</div>
+
+  <!-- Icon 16 -->
+   <div class="h-9 w-12 hover:scale-[1.03] transition-transform duration-300">
+  <svg
+    viewBox="0 0 20 20"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-10 h-8 text-purple-500 hover:text-purple-800 transition-colors duration-300"
+    fill="currentColor"
+  >
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="currentColor">
+          <g id="icons" transform="translate(56.000000, 160.000000)">
+            <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"></path>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+
+<!-- Icon 17 -->
+    <div class="h-12 w-12 hover:scale-[1.03] transition-transform duration-300">
+  <svg
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    class="w-10 h-12 text-purple-500 hover:text-purple-800 transition-colors duration-300"
+  >
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="invisible_box" data-name="invisible box">
+          <rect width="48" height="48" fill="none"></rect>
+          <rect width="48" height="48" fill="none"></rect>
+        </g>
+        <g id="icons_Q2" data-name="icons Q2">
+          <g>
+            <rect x="10" y="19.3" width="4.4" height="4.44"></rect>
+            <rect x="4.6" y="19.3" width="4.4" height="4.44"></rect>
+            <path d="M45.4,21.7a6.3,6.3,0,0,0-5.2-.6,6.6,6.6,0,0,0-2.9-4.4l-.5-.5-.5.6A6.1,6.1,0,0,0,35.2,21a5.6,5.6,0,0,0,1,2.8l-1.5.7a10.5,10.5,0,0,1-3,.5H2.2v.6a12.1,12.1,0,0,0,1,6.5l.4.8h0c2.8,4.6,7.7,6.6,13,6.6,10.3,0,18.7-4.4,22.7-14,2.6.2,5.2-.5,6.5-3L46,22ZM10.8,33.5a2.3,2.3,0,1,1,0-4.6,2.3,2.3,0,1,1,0,4.6Z"></path>
+            <rect x="10" y="13.7" width="4.4" height="4.44"></rect>
+            <rect x="26.5" y="19.3" width="4.4" height="4.44"></rect>
+            <rect x="21.1" y="8" width="4.4" height="4.44"></rect>
+            <rect x="21.1" y="19.3" width="4.4" height="4.44"></rect>
+            <rect x="15.6" y="13.7" width="4.4" height="4.44"></rect>
+            <rect x="21.1" y="13.7" width="4.4" height="4.44"></rect>
+            <rect x="15.6" y="19.3" width="4.4" height="4.44"></rect>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+
+<!-- Icon 18 -->
+    <div class="h-9 w-12 hover:scale-[1.03] transition-transform duration-300">
+  <svg
+    fill="currentColor"
+    height="200px"
+    width="200px"
+    viewBox="0 0 304.998 304.998"
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-10 h-9 text-purple-500 hover:text-purple-800 transition-colors duration-300"
+  >
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      <g id="XMLID_91_">
+        <path id="XMLID_92_" d="M274.659,244.888c-8.944-3.663-12.77-8.524-12.4-15.777c0.381-8.466-4.422-14.667-6.703-17.117 c1.378-5.264,5.405-23.474,0.004-39.291c-5.804-16.93-23.524-42.787-41.808-68.204c-7.485-10.438-7.839-21.784-8.248-34.922 c-0.392-12.531-0.834-26.735-7.822-42.525C190.084,9.859,174.838,0,155.851,0c-11.295,0-22.889,3.53-31.811,9.684 c-18.27,12.609-15.855,40.1-14.257,58.291c0.219,2.491,0.425,4.844,0.545,6.853c1.064,17.816,0.096,27.206-1.17,30.06 c-0.819,1.865-4.851,7.173-9.118,12.793c-4.413,5.812-9.416,12.4-13.517,18.539c-4.893,7.387-8.843,18.678-12.663,29.597 c-2.795,7.99-5.435,15.537-8.005,20.047c-4.871,8.676-3.659,16.766-2.647,20.505c-1.844,1.281-4.508,3.803-6.757,8.557 c-2.718,5.8-8.233,8.917-19.701,11.122c-5.27,1.078-8.904,3.294-10.804,6.586c-2.765,4.791-1.259,10.811,0.115,14.925 c2.03,6.048,0.765,9.876-1.535,16.826c-0.53,1.604-1.131,3.42-1.74,5.423c-0.959,3.161-0.613,6.035,1.026,8.542 c4.331,6.621,16.969,8.956,29.979,10.492c7.768,0.922,16.27,4.029,24.493,7.035c8.057,2.944,16.388,5.989,23.961,6.913 c1.151,0.145,2.291,0.218,3.39,0.218c11.434,0,16.6-7.587,18.238-10.704c4.107-0.838,18.272-3.522,32.871-3.882 c14.576-0.416,28.679,2.462,32.674,3.357c1.256,2.404,4.567,7.895,9.845,10.724c2.901,1.586,6.938,2.495,11.073,2.495 c0.001,0,0,0,0.001,0c4.416,0,12.817-1.044,19.466-8.039c6.632-7.028,23.202-16,35.302-22.551c2.7-1.462,5.226-2.83,7.441-4.065 c6.797-3.768,10.506-9.152,10.175-14.771C282.445,250.905,279.356,246.811,274.659,244.888z M124.189,243.535 c-0.846-5.96-8.513-11.871-17.392-18.715c-7.26-5.597-15.489-11.94-17.756-17.312c-4.685-11.082-0.992-30.568,5.447-40.602 c3.182-5.024,5.781-12.643,8.295-20.011c2.714-7.956,5.521-16.182,8.66-19.783c4.971-5.622,9.565-16.561,10.379-25.182 c4.655,4.444,11.876,10.083,18.547,10.083c1.027,0,2.024-0.134,2.977-0.403c4.564-1.318,11.277-5.197,17.769-8.947 c5.597-3.234,12.499-7.222,15.096-7.585c4.453,6.394,30.328,63.655,32.972,82.044c2.092,14.55-0.118,26.578-1.229,31.289 c-0.894-0.122-1.96-0.221-3.08-0.221c-7.207,0-9.115,3.934-9.612,6.283c-1.278,6.103-1.413,25.618-1.427,30.003 c-2.606,3.311-15.785,18.903-34.706,21.706c-7.707,1.12-14.904,1.688-21.39,1.688c-5.544,0-9.082-0.428-10.551-0.651l-9.508-10.879 C121.429,254.489,125.177,250.583,124.189,243.535z M136.254,64.149c-0.297,0.128-0.589,0.265-0.876,0.411 c-0.029-0.644-0.096-1.297-0.199-1.952c-1.038-5.975-5-10.312-9.419-10.312c-0.327,0-0.656,0.025-1.017,0.08 c-2.629,0.438-4.691,2.413-5.821,5.213c0.991-6.144,4.472-10.693,8.602-10.693c4.85,0,8.947,6.536,8.947,14.272 C136.471,62.143,136.4,63.113,136.254,64.149z M173.94,68.756c0.444-1.414,0.684-2.944,0.684-4.532 c0-7.014-4.45-12.509-10.131-12.509c-5.552,0-10.069,5.611-10.069,12.509c0,0.47,0.023,0.941,0.067,1.411 c-0.294-0.113-0.581-0.223-0.861-0.329c-0.639-1.935-0.962-3.954-0.962-6.015c0-8.387,5.36-15.211,11.95-15.211 c6.589,0,11.95,6.824,11.95,15.211C176.568,62.78,175.605,66.11,173.94,68.756z M169.081,85.08 c-0.095,0.424-0.297,0.612-2.531,1.774c-1.128,0.587-2.532,1.318-4.289,2.388l-1.174,0.711c-4.718,2.86-15.765,9.559-18.764,9.952 c-2.037,0.274-3.297-0.516-6.13-2.441c-0.639-0.435-1.319-0.897-2.044-1.362c-5.107-3.351-8.392-7.042-8.763-8.485 c1.665-1.287,5.792-4.508,7.905-6.415c4.289-3.988,8.605-6.668,10.741-6.668c0.113,0,0.215,0.008,0.321,0.028 c2.51,0.443,8.701,2.914,13.223,4.718c2.09,0.834,3.895,1.554,5.165,2.01C166.742,82.664,168.828,84.422,169.081,85.08z M205.028,271.45c2.257-10.181,4.857-24.031,4.436-32.196c-0.097-1.855-0.261-3.874-0.42-5.826 c-0.297-3.65-0.738-9.075-0.283-10.684c0.09-0.042,0.19-0.078,0.301-0.109c0.019,4.668,1.033,13.979,8.479,17.226 c2.219,0.968,4.755,1.458,7.537,1.458c7.459,0,15.735-3.659,19.125-7.049c1.996-1.996,3.675-4.438,4.851-6.372 c0.257,0.753,0.415,1.737,0.332,3.005c-0.443,6.885,2.903,16.019,9.271,19.385l0.927,0.487c2.268,1.19,8.292,4.353,8.389,5.853 c-0.001,0.001-0.051,0.177-0.387,0.489c-1.509,1.379-6.82,4.091-11.956,6.714c-9.111,4.652-19.438,9.925-24.076,14.803 c-6.53,6.872-13.916,11.488-18.376,11.488c-0.537,0-1.026-0.068-1.461-0.206C206.873,288.406,202.886,281.417,205.028,271.45z M39.917,245.477c-0.494-2.312-0.884-4.137-0.465-5.905c0.304-1.31,6.771-2.714,9.533-3.313c3.883-0.843,7.899-1.714,10.525-3.308 c3.551-2.151,5.474-6.118,7.17-9.618c1.228-2.531,2.496-5.148,4.005-6.007c0.085-0.05,0.215-0.108,0.463-0.108 c2.827,0,8.759,5.943,12.177,11.262c0.867,1.341,2.473,4.028,4.331,7.139c5.557,9.298,13.166,22.033,17.14,26.301 c3.581,3.837,9.378,11.214,7.952,17.541c-1.044,4.909-6.602,8.901-7.913,9.784c-0.476,0.108-1.065,0.163-1.758,0.163 c-7.606,0-22.662-6.328-30.751-9.728l-1.197-0.503c-4.517-1.894-11.891-3.087-19.022-4.241c-5.674-0.919-13.444-2.176-14.732-3.312 c-1.044-1.171,0.167-4.978,1.235-8.337c0.769-2.414,1.563-4.91,1.998-7.523C41.225,251.596,40.499,248.203,39.917,245.477z"></path>
+      </g>
+    </g>
+  </svg>
+</div>
+
+<!-- Icon 19 -->
+  <div class="h-9 w-12 hover:scale-[1.03] transition-transform duration-300">
+  <svg
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    class="w-10 h-9 text-purple-500 hover:text-purple-800 transition-colors duration-300"
+  >
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      <g fill="currentColor">
+        <path d="M4.51 7.687c0 .197.02.357.058.475.042.117.096.245.17.384a.233.233 0 01.037.123c0 .053-.032.107-.1.16l-.336.224a.255.255 0 01-.138.048c-.054 0-.107-.026-.16-.074a1.652 1.652 0 01-.192-.251 4.137 4.137 0 01-.164-.315c-.416.491-.937.737-1.565.737-.447 0-.804-.129-1.064-.385-.261-.256-.394-.598-.394-1.025 0-.454.16-.822.484-1.1.325-.278.756-.416 1.304-.416.18 0 .367.016.564.042.197.027.4.07.612.118v-.39c0-.406-.085-.689-.25-.854-.17-.166-.458-.246-.868-.246-.186 0-.377.022-.574.07a4.23 4.23 0 00-.575.181 1.525 1.525 0 01-.186.07.326.326 0 01-.085.016c-.075 0-.112-.054-.112-.166v-.262c0-.085.01-.15.037-.186a.399.399 0 01.15-.113c.185-.096.409-.176.67-.24.26-.07.537-.101.83-.101.633 0 1.096.144 1.394.432.293.288.442.726.442 1.314v1.73h.01zm-2.161.811c.175 0 .356-.032.548-.096.192-.064.362-.182.505-.342a.848.848 0 00.181-.341c.032-.129.054-.283.054-.465V7.03a4.43 4.43 0 00-.49-.09 3.996 3.996 0 00-.5-.033c-.357 0-.617.07-.793.214-.176.144-.26.347-.26.614 0 .25.063.437.196.566.128.133.314.197.559.197zm4.273.577c-.096 0-.16-.016-.202-.054-.043-.032-.08-.106-.112-.208l-1.25-4.127a.938.938 0 01-.048-.214c0-.085.042-.133.127-.133h.522c.1 0 .17.016.207.053.043.032.075.107.107.208l.894 3.535.83-3.535c.026-.106.058-.176.101-.208a.365.365 0 01.213-.053h.426c.1 0 .17.016.212.053.043.032.08.107.102.208l.84 3.578.92-3.578a.459.459 0 01.107-.208.347.347 0 01.208-.053h.495c.085 0 .133.043.133.133 0 .027-.006.054-.01.086a.768.768 0 01-.038.133l-1.283 4.127c-.031.107-.069.177-.111.209a.34.34 0 01-.203.053h-.457c-.101 0-.17-.016-.213-.053-.043-.038-.08-.107-.101-.214L8.213 5.37l-.82 3.439c-.026.107-.058.176-.1.213-.043.038-.118.054-.213.054h-.458zm6.838.144a3.51 3.51 0 01-.82-.096c-.266-.064-.473-.134-.612-.214-.085-.048-.143-.101-.165-.15a.38.38 0 01-.031-.149v-.272c0-.112.042-.166.122-.166a.3.3 0 01.096.016c.032.011.08.032.133.054.18.08.378.144.585.187.213.042.42.064.633.064.336 0 .596-.059.777-.176a.575.575 0 00.277-.508.52.52 0 00-.144-.373c-.095-.102-.276-.193-.537-.278l-.772-.24c-.388-.123-.676-.305-.851-.545a1.275 1.275 0 01-.266-.774c0-.224.048-.422.143-.593.096-.17.224-.32.384-.438.16-.122.34-.213.553-.277.213-.064.436-.091.67-.091.118 0 .24.005.357.021.122.016.234.038.346.06.106.026.208.052.303.085.096.032.17.064.224.096a.461.461 0 01.16.133.289.289 0 01.047.176v.251c0 .112-.042.171-.122.171a.552.552 0 01-.202-.064 2.428 2.428 0 00-1.022-.208c-.303 0-.543.048-.708.15-.165.1-.25.256-.25.475 0 .149.053.277.16.379.106.101.303.202.585.293l.756.24c.383.123.66.294.825.513.165.219.244.47.244.748 0 .23-.047.437-.138.619a1.435 1.435 0 01-.388.47c-.165.133-.362.23-.591.299-.24.075-.49.112-.761.112z"></path>
+        <path fill-rule="evenodd" d="M14.465 11.813c-1.75 1.297-4.294 1.986-6.481 1.986-3.065 0-5.827-1.137-7.913-3.027-.165-.15-.016-.353.18-.235 2.257 1.313 5.04 2.109 7.92 2.109 1.941 0 4.075-.406 6.039-1.239.293-.133.543.192.255.406z" clip-rule="evenodd"></path>
+        <path fill-rule="evenodd" d="M15.194 10.98c-.223-.287-1.479-.138-2.048-.069-.17.022-.197-.128-.043-.24 1-.705 2.645-.502 2.836-.267.192.24-.053 1.89-.99 2.68-.143.123-.281.06-.217-.1.212-.53.686-1.72.462-2.003z" clip-rule="evenodd"></path>
+      </g>
+    </g>
+  </svg>
+</div>
+
+<!-- Icon 20 -->
+<div class="h-8 w-10 hover:scale-[1.03] transition-transform duration-300">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+    fill="none" stroke="currentColor" stroke-width="2"
+    class="w-12 h-11 text-purple-500 hover:text-purple-800 transition-colors duration-300">
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
+      <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
+      <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
+      <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
+      <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
+    </g>
+  </svg>
+</div>
+
+
+<!-- Icon 21 -->
+<div class="h-9 w-12 hover:scale-[1.03] transition-transform duration-300">
+  <svg  viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+    class="w-10 h-9 text-purple-500 hover:text-purple-800 transition-colors duration-300"
+  >
+    <path d="M21.0016 3.11679C21.0016 2.23783 20.0175 2.23782 19.5801 2.34769C20.1924 1.86426 20.9105 1.98147 21.1656 2.12796L27.079 5.02747C27.6424 5.30375 27.9998 5.8786 27.9998 6.50857V25.5831C27.9998 26.2215 27.6329 26.8025 27.058 27.0743L21.4937 29.7054C21.1109 29.8701 20.2799 30.2767 19.5801 29.7053C20.4549 29.8702 20.9287 29.2476 21.0016 28.8264V3.11679Z" ></path>
+    <path d="M19.6512 2.3319C20.1154 2.24017 21.0018 2.28271 21.0018 3.11685V9.68254L3.07359 23.2453C2.76022 23.4824 2.3192 23.443 2.05229 23.1542L0.204532 21.1548C-0.0849358 20.8416 -0.0646824 20.3513 0.249624 20.0633L19.5802 2.34775L19.6512 2.3319Z" ></path>
+    <path d="M21.0018 22.3708L3.07359 8.80801C2.76022 8.57094 2.3192 8.61028 2.05229 8.8991L0.204532 10.8985C-0.0849358 11.2117 -0.0646824 11.702 0.249624 11.9901L19.5802 29.7056C20.455 29.8704 20.9289 29.2478 21.0018 28.8266V22.3708Z" ></path>
+  </svg>
+</div>
+
+    <!-- Icon 22 -->
+    <div class="w-12 h-8 hover:scale-[1.03] transition-transform duration-300">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+    class="w-10 h-8 text-purple-600 hover:text-purple-900 transition-colors duration-300">
+    
+    <path d="M8.09095 24.9598L0.365234 18.8341L4.20523 11.7026L15.2224 15.9998L8.09095 24.9598Z" />
+    <path d="M32.0003 8.54864L31.406 27.0629L19.1088 32.0001L11.7031 27.2458L22.5374 16.0001L17.7831 5.62293L22.0346 0.50293L32.0003 8.54864Z"  />
+    <path d="M32.0003 8.54864L22.2632 20.0686L17.7832 5.62293L22.0346 0.50293L32.0003 8.54864Z" />
+    <path d="M15.4057 26.56L2.56 31.2229L4.61714 24L7.31429 15.1314L0 12.6629L4.61714 0L14.6743 1.23429L24.5486 12.5257L15.4057 26.56Z"  />
+
+    <!-- The text area -->
+    <path d="M8.0918 22.2173H15.4975V23.4516H8.0918V22.2173Z" fill="white"></path>
+    <path d="M13.4395 10.24V8.73145H9.3252V10.24H10.5138V15.4057H9.3252V16.9143H13.4395V15.4057H12.2966V10.24H13.4395Z" fill="white"></path>
+    <path d="M17.3712 17.0514C16.7312 17.0514 16.1826 16.9143 15.7712 16.6857C15.3597 16.4572 14.994 16.1372 14.7197 15.8172L15.8626 14.5372C16.0912 14.8114 16.3197 14.9943 16.5483 15.1314C16.7769 15.2686 17.0512 15.36 17.3254 15.36C17.6454 15.36 17.9197 15.2686 18.1483 15.04C18.3312 14.8114 18.4226 14.4914 18.4226 13.9886V8.73145H20.2512V14.08C20.2512 14.5829 20.2054 14.9943 20.0683 15.36C19.9312 15.7257 19.7483 16 19.474 16.2743C19.2454 16.5029 18.9254 16.7314 18.5597 16.8229C18.194 16.96 17.8283 17.0514 17.3712 17.0514Z" fill="white"></path>
+  </svg>
+</div>
+
+
+    </div>
+  </marquee>
+</div>
+
+  </div>
+</section>
+<!-- ! Skills Section End -->
+
+<!-- ? Project Section Start -->
+ <section id="projects" class="scroll-mt-10 pt-12  md:py-14" data-section="projects">
+  <div class="relative container mx-auto w-full px-4">
+    <div class="mb-10">
+      <h2 class="h2-style">
+        My&nbsp;<span class="gradient">Projects</span>
+      </h2>
+    </div>
+    <div class="text-center container mb-10">
+      <div class="flex flex-wrap gap-6 mb-6 justify-center">
+        <button onclick="showProjects('all', this)" class="project-btn active-btn">All</button>
+  <button onclick="showProjects('fullstack', this)" class="project-btn">Full Stack</button>
+  <button onclick="showProjects('webapp', this)" class="project-btn">Web App</button>
+      </div>
+    </div>
+    <!-- Project card grid -->
+    <div id="project-grid" class="grid gap-10 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <!-- Cards will be injected here -->
+    </div>
+  </div>
+</section>
+<!-- ! Project Section End -->
+
+
+<!-- ? Contact Section Start -->
+<section id="contact" class="scroll-mt-10 mt-8 pt-8 px-4 sm:px-6 md:pt-14 lg:px-8" data-section="contact">
+  <div class="max-w-7xl mx-auto w-full">
+    <div class="mb-10 text-center">
+      <h2 class="h2-style">
+        Contact&nbsp;<span class="gradient">Me</span>
+      </h2>
+    </div>
+
+    <!-- Responsive Flexbox -->
+    <div class="flex flex-col lg:flex-row gap-8">
+      
+      <!-- Contact Details -->
+      <div class="w-full lg:w-2/4 xl:w-2/3 space-y-2 mb-6">
+        <h3 class="h3-style">
+          Let's Connect<span class="h3-underline"></span>
+        </h3>
+        <p class="p-style -mt-3 mb-5 max-w-[600px] indent-4">
+          I'm always open to thoughtful conversations and new opportunities. Feel free to reach out using the details below or simply fill out the contact form.
+        </p>
+
+        <p class="flex items-center gap-2 p-style ">
+          <i class="fas fa-map-marker-alt text-purple-600"></i> Chennai, TamilNadu, India
+        </p>
+
+        <p class="flex items-center gap-2 p-style ">
+          <i class="fas fa-envelope text-purple-600"></i> sriharishs872004@gmail.com
+        </p>
+
+        <p class="flex items-center gap-2 p-style">
+          <i class="fas fa-phone text-purple-600"></i> +91&nbsp;7358345735
+        </p>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="w-full lg:w-2/4 xl:w-1/3">
+        <form class="w-full max-w-md mx-auto space-y-6" onsubmit="return sendMail();">
+          <div>
+            <label for="name" class="block mb-1 text-sm font-medium">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required
+              class="block w-full rounded-md border border-purple-300 bg-purple-100 px-4 py-2 text-sm text-gray-900 focus:border-purple-400 focus:ring-purple-500 focus:outline-none" />
+          </div>
+          <div>
+            <label for="email" class="block mb-1 text-sm font-medium">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required
+              class="block w-full rounded-md border border-purple-300 bg-purple-100 px-4 py-2 text-sm text-gray-900 focus:border-purple-400 focus:ring-purple-500 focus:outline-none" />
+          </div>
+          <div>
+            <label for="message" class="block mb-1 text-sm font-medium">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required
+              class="block w-full rounded-md border border-purple-300 bg-purple-100 px-4 py-2 text-sm text-gray-900 resize-none focus:border-purple-400 focus:ring-purple-500 focus:outline-none"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full rounded-lg bg-purple-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-purple-800 active:scale-100 transition-transform duration-200 ease-linear"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-purple-900 text-white py-10 mt-20">
+    <div class="mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-center md:text-left">
+        <h3 class="text-2xl font-semibold">Sriharish S</h3>
+        <p class="text-sm text-purple-200">Full Stack Developer & Innovator</p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-6 text-sm">
+        <a href="#home" class="flex items-center gap-2 hover:text-purple-400 transition-colors duration-300">
+          <i class="fas fa-home text-purple-600"></i> Home
+        </a>
+        <a href="#about" class="flex items-center gap-2 hover:text-purple-400 transition-colors duration-300">
+          <i class="fas fa-user text-purple-600"></i> About
+        </a>
+        <a href="#skills" class="flex items-center gap-2 hover:text-purple-400 transition-colors duration-300">
+          <i class="fas fa-cogs text-purple-600"></i> Skills
+        </a>
+        <a href="#projects" class="flex items-center gap-2 hover:text-purple-400 transition-colors duration-300">
+          <i class="fas fa-code text-purple-600"></i> Projects
+        </a>
+        <a href="#contact" class="flex items-center gap-2 hover:text-purple-400 transition-colors duration-300">
+          <i class="fas fa-envelope text-purple-600"></i> Contact
+        </a>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/sriharish872004" target="_blank" class="hover:text-purple-300 transition">
+          <i class="fab fa-github text-xl"></i>
+        </a>
+        <a href="http://www.linkedin.com/in/sriharish-s-96a065288" target="_blank" class="hover:text-purple-300 transition">
+          <i class="fab fa-linkedin text-xl"></i>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sriharishs872004@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-purple-300 transition"
+          title="Send Email via Gmail">
+          <i class="fas fa-envelope text-xl"></i>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="mt-8 border-t border-purple-700 pt-6 text-center text-sm text-purple-300">
+      Copyright &copy; 2025 - All right reserved by 💜 Sriharish 
+    </div>
+  </footer>
+</section>
+
+<!-- ! Contact Section End -->
+
+    <script src="./src/script.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</body>
+</html>
