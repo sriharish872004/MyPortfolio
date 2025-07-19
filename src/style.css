@@ -14,12 +14,6 @@
 /* Adding Style for elements */
 @layer base{
   
-
-    .dark{
-    --color-demo: blue;
-    
-  }
-
   ::selection{
     background-color: #cce4ff;
     color: #000;
@@ -34,6 +28,8 @@
 html{
   scroll-behavior: smooth;
 }
+
+
 /* Hand animation */
 .wave {
   animation-name: wave-animation;
@@ -138,7 +134,7 @@ html{
 }
 
   .gradient {
-  @apply text-transparent font-bold bg-clip-text bg-gradient-to-r from-purple-600 to-blue-500;
+  @apply text-transparent font-bold bg-clip-text bg-gradient-to-r from-purple-600 via-purple-600 to-blue-500;
 }
 
 

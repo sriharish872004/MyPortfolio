@@ -1,4 +1,18 @@
-//document.querySelector('#contact').scrollIntoView({ behavior: "smooth", block: "start" });
+/* Animation */
+
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-out-back',
+      once: true,
+      offset: 100,
+    });
+  });
+
+  setTimeout(() => {
+  AOS.refresh();
+}, 100);
+
 
 /* Nav Bar */
 const navLinks = document.querySelectorAll(".nav-link");
@@ -86,7 +100,7 @@ function createSkillBar({ label, value }) {
     <div class="flex justify-between mb-2 text-sm sm:text-base lg:mb-3">
       <span>${label}</span><span>${value}%</span>
     </div>
-    <div class="w-full bg-gray-300 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+    <div class=" bg-gray-300 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
   <div class="h-2 rounded-full" style="width: ${value}%; background: linear-gradient(135deg, #a855f7, #7e22ce);"></div>
 </div>
   `;
@@ -94,7 +108,6 @@ function createSkillBar({ label, value }) {
   return li;
 }
 
-// Inject into DOM
 function renderSkills(skills, containerId) {
   const container = document.getElementById(containerId);
   skills.forEach(skill => {
@@ -121,7 +134,7 @@ const projects = [
   },
   {
     title: "ECommerce",
-    techStack: ["React", "Redux", "Bootstrap", "SpringBoot", "PostgreSQL"],
+    techStack: ["React", "Redux", "Bootstrap", "SpringBoot", "PostgreSQL","Docker"],
     image: "../assets/images/Ecommerce.png",
     codeLink: "https://github.com/sriharish872004/EcommerceBackEnd",
     liveLink: "https://buzzjob.vercel.app",
@@ -161,9 +174,9 @@ const projects = [
 
   filteredProjects.forEach((project) => {
     const card = document.createElement('div');
-    card.className = "rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-transform hover:-translate-y-1 bg-purple-500 hover:bg-purple-600 zoom-in-out";
+    card.className = "rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-transform hover:-translate-y-1 bg-gradient-to-r from-purple-600 via-purple-600 to-blue-500 zoom-in-out";
 
-    const techList = project.techStack.map(tech => `<li class="text-xs sm:text-sm text-white bg-white/20 dark:bg-white/10 px-2 py-1 rounded-xl">${tech}</li>`).join("");
+    const techList = project.techStack.map(tech => `<li class="text-xs sm:text-sm text-gray-300 bg-white/20 dark:bg-white/10 px-2 py-1 rounded-xl">${tech}</li>`).join("");
 
     card.innerHTML = `
       <div class="relative">
@@ -205,6 +218,7 @@ const projects = [
   document.addEventListener("DOMContentLoaded", () => {
     const firstBtn = document.querySelector('.project-btn');
     showProjects('all', firstBtn);
+    AOS.refresh();
   });
 
   /* Mail */
