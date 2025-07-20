@@ -13,6 +13,9 @@
   AOS.refresh();
 }, 100);
 
+window.addEventListener('resize', () => {
+    AOS.refreshHard(); 
+  });
 
 /* Nav Bar */
 const navLinks = document.querySelectorAll(".nav-link");
